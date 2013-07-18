@@ -20,6 +20,10 @@ body {
   background-color: white;
 }
 
+i {
+  margin-right: 2px;
+}
+
 /* navbar */
 
 #navbar {
