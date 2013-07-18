@@ -120,26 +120,36 @@ div#main_page_content > h2:after {
 
 div.span2-card {
   height:200px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 0;
-  border-radius: 4px;
-  border: 1px solid black;
+  border: 1px solid #eee;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -webkit-box-shadow: 0px 4px 2px -2px #888;
+  -moz-box-shadow: 0px 4px 2px -2px #888;
+  box-shadow: 0px 4px 2px -2px #888;
+}
+
+div.span2-card:hover {
+  transform: translateY(4px);
+  -webkit-box-shadow: 0px 0px 2px -2px #888;
+  -moz-box-shadow: 0px 0px 2px -2px #888;
+  box-shadow: 0px 0px 2px -2px #888; 
 }
 
 div.span2-card > div.span2-card-top {
   width: 100%;
-  height:75%;
+  height: 75%;
   margin: 0;
   padding: 4px;
-  background-color: #99ffaa;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
 }
 
 div.span2-card > div.span2-card-bottom {
   width: 100%;
   height:25%;
   margin: 0;
+  padding: 5px;
+  text-align: center;
   background-color: white;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;

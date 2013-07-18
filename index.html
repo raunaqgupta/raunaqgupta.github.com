@@ -21,8 +21,7 @@ title: RAUNAQ GUPTA
             {% for post in site.categories.portfolio limit:4 offset:offset_num %}
                 {% if forloop.first %}
                 <div class="span2 offset1 span2-card">
-                    <div class="span2-card-top">
-                        {{post.abstract}}
+                    <div class="span2-card-top" style="background: url(./img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 200%; background-repeat: no-repeat;">
                     </div>
                     <div class="span2-card-bottom">
                         {{post.title}}
@@ -30,7 +29,11 @@ title: RAUNAQ GUPTA
                 </div>
                 {% else %}
                 <div class="span2 span2-card">
-                    {{post.abstract}}
+                    <div class="span2-card-top" style="background: url(./img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 200%; background-repeat: no-repeat;">
+                    </div>
+                    <div class="span2-card-bottom">
+                        {{post.title}}
+                    </div>
                 </div>
                 {% endif %}
             {% endfor %}
