@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio_post
 category: portfolio
 title: Collablocks
 image_folder: img_collablocks

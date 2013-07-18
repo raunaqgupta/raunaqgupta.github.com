@@ -50,12 +50,6 @@ body {
   border: none;
 }
 
-#navbar > ul > a:nth-child(2) > li {
-  float: left;
-  font-size: 1.2em;
-  border: none;
-}
-
 #navbar > ul > a:hover > li {
   color: #eee;
   background-color: #bbb;
@@ -117,6 +111,16 @@ div#main_page_content > h2:after {
   border-color: #aaa #aaa transparent transparent;
 }
 
+
+div#main_page_content > ul > li {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  list-style-type: none;
+  float: left;
+  margin-right: 30px;
+}
+
 /* portfolio cards */
 
 div.span2-card {
@@ -132,6 +136,8 @@ div.span2-card {
 }
 
 div.span2-card:hover {
+  -webkit-transform: translateY(4px);
+  -moz-transform: translateY(4px);
   transform: translateY(4px);
   -webkit-box-shadow: 0px 0px 2px -2px #888;
   -moz-box-shadow: 0px 0px 2px -2px #888;
@@ -156,15 +162,6 @@ div.span2-card > div.span2-card-bottom {
   border-bottom-right-radius: 4px;
 }
 
-div#main_page_content > ul > li {
-  width: 200px;
-  height: 200px;
-  border: 1px solid;
-  list-style-type: none;
-  float: left;
-  margin-right: 30px;
-}
-
 /*
 -----------------
 POST CONTENT
@@ -180,10 +177,14 @@ div.portfolio-post-box {
 }
 
 div.post-control {
-  background-color: orange;
+  background-color: #559955;
   position: absolute;
   float: left;
   text-align: right;
+}
+
+div.post-control:hover {
+  background-color: orange;
 }
 
 /*
@@ -223,8 +224,24 @@ div.portfolio-right-span {
 
 .footer-content {
   padding-top: 20px;
+  color: white;
+  font-weight: bold;
 }
 
 #footer-about {
   color: white;
+}
+
+#footer-links > ul > li {
+  list-style-type: none;
+}
+
+#footer-links > ul > li > a {
+  color: white;
+  border: none;
+}
+
+#footer-links > ul > li > a:hover {
+  color: yellow;
+  border: none;
 }

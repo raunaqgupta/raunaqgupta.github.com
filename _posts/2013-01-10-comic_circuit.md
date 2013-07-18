@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio_post
 category: portfolio
 title: Comic Circuit
 image_folder: img_comic_circuit

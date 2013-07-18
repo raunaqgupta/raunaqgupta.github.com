@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio_post
 category: portfolio
 title: Crunchbang Linux sticker
 image_folder: img_crunchbang_sticker

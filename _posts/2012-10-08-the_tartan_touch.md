@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio_post
 category: portfolio
 title: Tartan Touch
 image_folder: img_the_tartan_touch
