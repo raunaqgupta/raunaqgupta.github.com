@@ -16,7 +16,8 @@ html, body {
 }
 
 body {
-  background: url(../img/common/ps_neutral_@2X.png) repeat;
+  /* background: url(../img/common/mooning_@2X.png) repeat; */
+  background-color: white;
 }
 
 /* navbar */
@@ -74,14 +75,15 @@ body {
 div.content {
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  /* border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; */
   border: 1px solid #aaa;
+  background-color: white;
 }
 
 /* main page content */
 
 div#main_page_content {
-  background-color: #fafafa;
 }
 
 div#main_page_content > h2 {
@@ -92,9 +94,8 @@ div#main_page_content > h2 {
   font-weight: bold;
   padding: 6px 20px 6px 20px;
   margin: 15px 10px 25px -15px;
-  color: #555;
+  color: white;
   background-color: #ccc;
-  text-shadow: 0px 1px 2px #bbb;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   /*
@@ -164,6 +165,41 @@ div#main_page_content > ul > li {
   margin-right: 30px;
 }
 
+/*
+-----------------
+POST CONTENT
+-----------------
+*/
+
+div.portfolio-post-box {
+    border: 1px solid #559955;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.post-control {
+  background-color: orange;
+  position: absolute;
+  float: left;
+  text-align: right;
+}
+
+/*
+-----------------
+PORTFOLIO POST CONTENT
+-----------------
+*/
+
+
+div.portfolio-left-span {
+}
+
+div.portfolio-right-span {
+  background-color: #9f9f9f;
+}
+
 /* Sticky footer */
 
 #wrap {
@@ -180,11 +216,15 @@ div#main_page_content > ul > li {
 }
 
 #footer {
-  background-color: #f5f5f5;
+  background: url(/img/common/mochaGrunge_@2X.png);
 }
 
 /* footer-content */
 
 .footer-content {
   padding-top: 20px;
+}
+
+#footer-about {
+  color: white;
 }

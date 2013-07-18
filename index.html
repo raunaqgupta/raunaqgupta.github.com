@@ -8,7 +8,7 @@ title: RAUNAQ GUPTA
         <h2>PORTFOLIO</h2>
         <div class="row" id="portfolio-content">
             <div class="span8 offset1 inner-span">
-                HELLO
+                SPACE FOR FEATURED PROJECTS
             </div>
         </div>
         <hr />
@@ -20,6 +20,7 @@ title: RAUNAQ GUPTA
             {% assign offset_num = row_num | times:4 %}
             {% for post in site.categories.portfolio limit:4 offset:offset_num %}
                 {% if forloop.first %}
+                <a href="{{post.url}}">
                 <div class="span2 offset1 span2-card">
                     <div class="span2-card-top" style="background: url(./img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 200%; background-repeat: no-repeat;">
                     </div>
@@ -27,7 +28,9 @@ title: RAUNAQ GUPTA
                         {{post.title}}
                     </div>
                 </div>
+                </a>
                 {% else %}
+                <a href="{{post.url}}">
                 <div class="span2 span2-card">
                     <div class="span2-card-top" style="background: url(./img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 200%; background-repeat: no-repeat;">
                     </div>
@@ -35,6 +38,7 @@ title: RAUNAQ GUPTA
                         {{post.title}}
                     </div>
                 </div>
+                </a>
                 {% endif %}
             {% endfor %}
             
