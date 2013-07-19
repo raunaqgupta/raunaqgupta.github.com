@@ -1,6 +1,6 @@
 ---
 layout: portfolio_post
-category: portfolio
+categories: portfolio featured
 title: Comic Circuit
 image_folder: img_comic_circuit
 abstract: Web service to foster crowdsourced comic creation. CHI 2013 design competition finalist.

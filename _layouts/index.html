@@ -4,42 +4,30 @@
     <div class="span10 offset1 content" id="main_page_content">
         <h2>PORTFOLIO</h2>
         <div class="row" id="portfolio-content">
-            <div class="span8 offset1 span8-card">
+            {% for post in site.categories.featured %}
+            <div class="span4 {% if forloop.first %} offset1 {% endif %} portfolio-featured-card", style="background: url(/img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 200%; background-repeat: no-repeat;">
+                <a href="{{post.url}}">
+                    <div class="portfolio-featured-card-desc">
+                        <h4>{{post.title}}</h4>
+                        <p>{{post.abstract}}</p>
+                    </div>
+                </a>
             </div>
+            {% endfor %}
         </div>
         <hr />
 
-        {% assign portfolio_length = site.categories.portfolio.size | divided_by:4 %}
-
-        {% for row_num in (0..portfolio_length) %}
-        <div class="row">
-            {% assign offset_num = row_num | times:4 %}
-            {% for post in site.categories.portfolio limit:4 offset:offset_num %}
-                {% if forloop.first %}
-                <a href="{{post.url}}">
-                <div class="span2 offset1 span2-card">
-                    <div class="span2-card-top" style="background: url(./img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 200%; background-repeat: no-repeat;">
-                    </div>
-                    <div class="span2-card-bottom">
-                        {{post.title}}
-                    </div>
-                </div>
-                </a>
-                {% else %}
-                <a href="{{post.url}}">
-                <div class="span2 span2-card">
-                    <div class="span2-card-top" style="background: url(./img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 200%; background-repeat: no-repeat;">
-                    </div>
-                    <div class="span2-card-bottom">
-                        {{post.title}}
-                    </div>
-                </div>
-                </a>
-                {% endif %}
+        <ul class="portfolio-stack">
+            {% for post in site.categories.portfolio %}
+                <li class="portfolio-card">
+                    <a href="{{post.url}}">
+                        <div class="portfolio-card-overlay" style="background: url(/img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 200%; background-repeat: no-repeat;">
+                            <p>{{post.title}}</p>
+                        </div>
+                    </a>
+                </li>
             {% endfor %}
-            
-        </div>
-        {% endfor %}
+        </ul>
     </div>
 </div>
 

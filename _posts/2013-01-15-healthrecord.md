@@ -1,7 +1,7 @@
 ---
 layout: portfolio_post
 category: portfolio
-title: Reimagining the Patient Health Record
+title: Health Design Challenge
 image_folder: img_healthrecord
 tags: Print
 abstract: Visual overhaul of patient medical records for print and web.
