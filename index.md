@@ -1,4 +1,4 @@
 ---
-layout: index
+layout: index_new
 title: RAUNAQ GUPTA
 ---

@@ -3,8 +3,10 @@ layout: portfolio_post
 category: portfolio
 title: Collablocks
 image_folder: img_collablocks
-abstract: Experimental web based social game utilizing a Node.js stack. Facebook hackathon winner.
+abstract: Experimental web based social game utilizing a Node.js stack. Facebook hackathon runner-up.
 ---
+
+Collablocks is a social experimental game which tries to put a co-located group of people together to solve a 3D based puzzle. The game itself is displayed on a public screen and individual gamers can join via their mobile devices.
 
 Collablocks was a 2nd place winner at a 24 hour Facebook hackathon. It is a social experimental game that aims at providing a platform to engage large audiences in a collaborative gaming experience. The video game is composed of a 3D puzzle that participants from the audience can join in together and solve collaboratively. The participants connect by visiting the browser application and find themselves in control of a layer of blocks in a 3D grid of blocks where each participant each such layer. The goal of the game is to fill a randomly generated wireframe within this cube by working together.
 

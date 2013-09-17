@@ -14,7 +14,7 @@
         {% for row_num in (0..portfolio_length) %}
         <div class="row">
             {% assign offset_num = row_num | times:4 %}
-            {% for post in site.categories.portfolio limit:4 offset:offset_num %}
+            {% for post in site.categories.blog limit:4 offset:offset_num %}
                 {% if forloop.first %}
                 <a href="{{post.url}}">
                 <div class="span2 offset1 span2-card">
