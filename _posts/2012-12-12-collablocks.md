@@ -3,27 +3,35 @@ layout: portfolio_post
 category: portfolio
 title: Collablocks
 image_folder: img_collablocks
-abstract: Experimental web based social game utilizing a Node.js stack. Facebook hackathon runner-up.
+abstract: Uniting anonymous crowds through collective collaboration
 ---
 
 Collablocks is a social experimental game which tries to put a co-located group of people together to solve a 3D based puzzle. The game itself is displayed on a public screen and individual gamers can join via their mobile devices.
 
-Collablocks was a 2nd place winner at a 24 hour Facebook hackathon. It is a social experimental game that aims at providing a platform to engage large audiences in a collaborative gaming experience. The video game is composed of a 3D puzzle that participants from the audience can join in together and solve collaboratively. The participants connect by visiting the browser application and find themselves in control of a layer of blocks in a 3D grid of blocks where each participant each such layer. The goal of the game is to fill a randomly generated wireframe within this cube by working together.
+<p><iframe src="//player.vimeo.com/video/61863214?byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
 
-<div id="myCarousel" class="carousel slide">
+<h4>Concept</h4>
 
-	<!-- Carousel items -->
-	<div class="carousel-inner">
-		<div class="active item"><img src="/img/img_collablocks/one.png" class="img-polaroid centered-img" alt="Collablocks" /></div>
-		<div class="item"><img src="/img/img_collablocks/two.png" class="img-polaroid centered-img" alt="Collablocks" /></div>
-		<div class="item"><img src="/img/img_collablocks/four.png" class="img-polaroid centered-img" alt="Collablocks" /></div>
-	</div>
-	<!-- Carousel nav -->
-	<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-	<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-</div>
+It is a social experimental game that aims at providing a platform to engage large audiences in a collaborative gaming experience. The video game is composed of a 3D puzzle that participants from the audience can join in together and solve collaboratively. The participants connect by visiting the browser application and find themselves in control of a layer of blocks in a 3D grid of blocks where each participant each such layer. The goal of the game is to fill a randomly generated wireframe within this cube by working together.
 
+<figure class="post-image">
+	<img src="/img/img_collablocks/one.png"></img>
+	<figcaption>Browser view</figcaption>
+</figure>
 
-I was one of the programmers in the team of four using node.js, socketstream and webGL to create the browser-based game. The team also included: Jonas Gebhardt, Jonathan Chan and Noah Bernstein.
+<figure class="post-image">
+	<img src="/img/img_collablocks/four.png"></img>
+	<figcaption>Mobile view</figcaption>
+</figure>
 
-Development in: HTML5:WebGL, CSS3, Javascript, Node.JS, SocketStream
+<h4>Role</h4>
+
+We built and tested Collablocks during Facebook CMU hackathon in 2012 and were runner-ups at the event. I was one of the programmers in the team of four using node.js, socketstream and webGL to create the experience.
+
+<h4>Team</h4>
+
+Jonas Gebhardt + Jonathan Chan + Noah Bernstein
+
+<h4>Technology</h4>
+
+The app built atop Node.JS and socketstream and the visualizations were created with WebGL and Javascript.
