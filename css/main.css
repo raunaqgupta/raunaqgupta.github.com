@@ -319,16 +319,18 @@ div#lightbox > div#content > img {
   .container {
     margin: 0;
     padding: 0;
-    width: 750px; }
+    width: 767px; }
 
   .row {
     margin: 0;
     padding: 0px 10px; }
     .row .span12 {
-      padding: 0px 10px; }
+      margin: 0; }
 
   .contact_box.visible {
-    height: 200px; }
+    padding-right: 5px;
+    height: 200px;
+    width: 730px; }
   .contact_box .contact_info {
     height: 200px; }
     .contact_box .contact_info .contact_photo {
@@ -336,4 +338,10 @@ div#lightbox > div#content > img {
       line-height: 175px;
       text-align: center; }
     .contact_box .contact_info .contact_desc {
-      width: 250px; } }
+      width: 250px; }
+    .contact_box .contact_info .contact_details {
+      padding: 0px;
+      width: 250px; }
+
+  .portfolio-post-box {
+    padding-right: 10px; } }

@@ -409,7 +409,7 @@ div#lightbox > div#content > img {
   .container {
     margin: 0;
     padding: 0;
-    width: 750px;
+    width: 767px;
   }
 
   .row {
@@ -417,13 +417,15 @@ div#lightbox > div#content > img {
     padding: 0px 10px;
 
     .span12 {
-      padding: 0px 10px;
+      margin: 0;
     }
   }
 
   .contact_box {
     &.visible {
+      padding-right: 5px;
       height: 200px;
+      width: 730px;
     }
 
     .contact_info {
@@ -438,6 +440,15 @@ div#lightbox > div#content > img {
       .contact_desc {
         width: 250px;
       }
+
+      .contact_details {
+        padding: 0px;
+        width: 250px;
+      }
     }
+  }
+
+  .portfolio-post-box {
+    padding-right: 10px;
   }
 }
