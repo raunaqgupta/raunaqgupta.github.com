@@ -152,6 +152,11 @@ i {
       height: 100px;
       line-height: 100px;
       text-align: center;
+
+      img {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
     }
 
     .contact_details {
@@ -159,6 +164,26 @@ i {
 
       ul {
         list-style-type: none;
+
+        li {
+          margin-bottom: 7px;
+
+          a {
+            position: relative;
+            top: -3px;
+          }
+        }
+      }
+
+      .social_media {
+        list-style-type: none;
+        padding-top: 10px;
+        padding-left: 14px;
+
+        li {
+          display: inline;
+          margin-right: 3px;
+        }
       }
     }
   }
@@ -172,31 +197,62 @@ i {
   list-style-type: none;
 
   .card {
-    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 4px;
+    width: 230px;
+    text-align: center;
 
-    li {
-      display: inline-block;
-      margin-bottom: 4px;
-      width: 232px;
-      height: 144px;
-      background-color: #eee;
-      text-align: center;
+    a {
+      text-decoration: none;
+
+      .image {
+        width: 228px;
+        height: 144px;
+      }
 
       p {
-        width: 232px;
-        height: 144px;
-        line-height: 144px;
-        opacity: 0;
-        background-color: white;
-        transition: opacity 0.5s;
+        padding: 10px;
+        font-size: 1.3em;
+        color: #aaa;
+      }
+
+      .overlay {
+        display: table;
+
+        p {
+          display: table-cell;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+          transition: opacity 250ms ease-in;
+        }
       }
     }
 
+    .data {
+      display: inline;
+      float: right;
+      border: 1px solid black;
+    }
+
     &:hover {
-      li > p {
-        opacity: 0.75;
-        background-color: green;
-        color: white;
+      a {
+        p {
+          color: #777;
+        }
+
+        .overlay {
+
+          p {
+            background-color: green;
+            opacity: 0.8;
+            width: 228px;
+            height: 144px;
+            color: white;
+          }
+        }
       }
     }
   }

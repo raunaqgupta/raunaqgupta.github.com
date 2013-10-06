@@ -2,6 +2,7 @@
 layout: portfolio_post
 categories: portfolio
 title: Tartan Touch
+tags: Interactive
 image_folder: img_the_tartan_touch
 abstract: Interactive demo for UIST 2013 on a next generation touchpad by Synaptics
 ---

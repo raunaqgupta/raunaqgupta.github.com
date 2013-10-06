@@ -2,13 +2,14 @@
 layout: portfolio_post
 category: portfolio
 title: Collablocks
+tags: WebGL
 image_folder: img_collablocks
 abstract: Uniting anonymous crowds through collective collaboration
 ---
 
 Collablocks is a social experimental game which tries to put a co-located group of people together to solve a 3D based puzzle. The game itself is displayed on a public screen and individual gamers can join via their mobile devices.
 
-<p><iframe src="//player.vimeo.com/video/61863214?byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+<p style="text-align: center"><iframe src="//player.vimeo.com/video/61863214?byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
 
 <h4>Concept</h4>
 
@@ -30,7 +31,7 @@ We built and tested Collablocks during Facebook CMU hackathon in 2012 and were r
 
 <h4>Team</h4>
 
-Jonas Gebhardt + Jonathan Chan + Noah Bernstein
+[Jonas Gebhardt](http://jonasgebhardt.net) + [Jonathan Chan](http://www.jon-chan.com/work) + [Noah Bernstein](http://noahbornstein.com/)
 
 <h4>Technology</h4>
 

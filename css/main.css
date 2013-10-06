@@ -117,10 +117,25 @@ i {
       height: 100px;
       line-height: 100px;
       text-align: center; }
+      .contact_box .contact_info .contact_photo img {
+        border: 1px solid #ddd;
+        border-radius: 5px; }
     .contact_box .contact_info .contact_details {
       text-align: left; }
       .contact_box .contact_info .contact_details ul {
         list-style-type: none; }
+        .contact_box .contact_info .contact_details ul li {
+          margin-bottom: 7px; }
+          .contact_box .contact_info .contact_details ul li a {
+            position: relative;
+            top: -3px; }
+      .contact_box .contact_info .contact_details .social_media {
+        list-style-type: none;
+        padding-top: 10px;
+        padding-left: 14px; }
+        .contact_box .contact_info .contact_details .social_media li {
+          display: inline;
+          margin-right: 3px; }
 
 /* portfolio list */
 .portfolio_list {
@@ -128,24 +143,40 @@ i {
   padding: 5px 10px;
   list-style-type: none; }
   .portfolio_list .card {
-    text-decoration: none; }
-    .portfolio_list .card li {
-      display: inline-block;
-      margin-bottom: 4px;
-      width: 232px;
-      height: 144px;
-      background-color: #eee;
-      text-align: center; }
-      .portfolio_list .card li p {
-        width: 232px;
-        height: 144px;
-        line-height: 144px;
-        opacity: 0;
-        background-color: white;
-        transition: opacity 0.5s; }
-    .portfolio_list .card:hover li > p {
-      opacity: 0.75;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 4px;
+    width: 230px;
+    text-align: center; }
+    .portfolio_list .card a {
+      text-decoration: none; }
+      .portfolio_list .card a .image {
+        width: 228px;
+        height: 144px; }
+      .portfolio_list .card a p {
+        padding: 10px;
+        font-size: 1.3em;
+        color: #aaa; }
+      .portfolio_list .card a .overlay {
+        display: table; }
+        .portfolio_list .card a .overlay p {
+          display: table-cell;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+          transition: opacity 250ms ease-in; }
+    .portfolio_list .card .data {
+      display: inline;
+      float: right;
+      border: 1px solid black; }
+    .portfolio_list .card:hover a p {
+      color: #777; }
+    .portfolio_list .card:hover a .overlay p {
       background-color: green;
+      opacity: 0.8;
+      width: 228px;
+      height: 144px;
       color: white; }
 
 /* content */

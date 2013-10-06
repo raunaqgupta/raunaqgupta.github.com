@@ -1,6 +1,7 @@
 ---
 layout: portfolio_post
 category: portfolio
+tags: Graphic
 title: Crunchbang Linux sticker
 image_folder: img_crunchbang_sticker
 abstract: Early graphic design work

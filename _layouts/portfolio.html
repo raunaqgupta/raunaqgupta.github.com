@@ -6,11 +6,16 @@
     <div class="span12">
       <ul class="portfolio_list">
         {% for post in site.categories.portfolio %}
-        <a href="{{post.url}}" class="card">
-          <li class="card" style="background: url(./img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 200%; background-repeat: no-repeat;">
-            <p>{{ post.title }}</p>
+          <li class="card">
+            <a href="{{post.url}}">
+              <div class="image" style="background: url(./img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 200%; background-repeat: no-repeat;">
+              </div>
+              <p>{{post.title}}</p>
+              <div class="overlay">
+                <p>{{post.abstract}}</p>
+              </div>
+            </a>
           </li>
-        </a>
         {% endfor %}
       </ul>
     </div>

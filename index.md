@@ -1,4 +1,4 @@
 ---
-layout: index_new
+layout: portfolio
 title: RAUNAQ GUPTA
 ---
