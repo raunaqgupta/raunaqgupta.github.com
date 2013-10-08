@@ -21,6 +21,10 @@ html{
   width: 100%;
 }
 
+.container {
+    width: 767px;
+  }
+
 body {
   /* background: url(../img/common/mooning_@2X.png) repeat; */
   background: white;
@@ -192,7 +196,6 @@ i {
 /* portfolio list */
 
 .portfolio_list {
-  margin: 0;
   padding: 5px 10px;
   list-style-type: none;
 
@@ -207,6 +210,7 @@ i {
       text-decoration: none;
 
       .image {
+        display: block;
         width: 228px;
         height: 144px;
       }
@@ -218,23 +222,58 @@ i {
       }
 
       .overlay {
-        display: table;
-
-        p {
-          display: table-cell;
-          position: absolute;
-          left: 0;
-          top: 0;
-          opacity: 0;
-          transition: opacity 250ms ease-in;
-        }
+        display: block;
+        display: table-cell;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: opacity 250ms ease-in;
       }
     }
 
     .data {
-      display: inline;
-      float: right;
-      border: 1px solid black;
+      display: none;
+    }
+
+    &:nth-child(3n+1){
+      &:hover {
+        .data {
+          display: block;
+          position: relative;
+          float: left;
+          border: 1px solid black;
+          width: 303%;
+          padding: 10px;
+          text-align: left;
+        }
+      }
+    }
+
+    &:nth-child(3n+2){
+      &:hover {
+        .data {
+          display: block;
+          position: relative;
+          float: left;
+          border: 1px solid black;
+          width: 303%;
+          left: -234px;
+        }
+      }
+    }
+
+    &:nth-child(3n){
+      &:hover {
+        .data {
+          display: block;
+          position: relative;
+          float: left;
+          border: 1px solid black;
+          width: 303%;
+          left: -469px;
+        }
+      }
     }
 
     &:hover {
@@ -244,14 +283,11 @@ i {
         }
 
         .overlay {
-
-          p {
-            background-color: green;
-            opacity: 0.8;
-            width: 228px;
-            height: 144px;
-            color: white;
-          }
+          background-color: green;
+          opacity: 0.8;
+          width: 228px;
+          height: 144px;
+          color: white;
         }
       }
     }
@@ -288,51 +324,6 @@ div#main_page_content > h2 {
 div#portfolio-content {
   text-align: left;
 }
-
-/* basic stack */
-
-ul.portfolio-stack {
-  padding: 0px;
-  margin-left: 8px;
-  display: inline-block;
-  overflow: hidden;
-  list-style: none;
-}
-
-li.portfolio-card {
-  float: left;
-  display: table;
-  position: relative;
-  margin-right: 10px;
-  margin-bottom: 15px;
-  padding: 0px;
-  width: 150px;
-  height: 150px;
-  border: 1px solid #aaa;
-  text-align: center;
-}
-
-div.portfolio-card-overlay {
-  display: table-cell;
-  width: 148px;
-  height: 148px;
-}
-
-div.portfolio-card-overlay p {
-  display: table-cell;
-  width: 148px;
-  height: 148px;
-  vertical-align: middle;
-  opacity: 0;
-}
-
-div.portfolio-card-overlay:hover p {
-  cursor: pointer;
-  opacity: 0.9;
-  color: white;
-  background-color: green;
-}
-
 
 /*
 -----------------
@@ -436,7 +427,7 @@ img.post-thumbnail:hover {
 
 /* lightbox overlay */
 
-div#lightbox {
+#lightbox {
   position: fixed;
   top: 0;
   left: 0;

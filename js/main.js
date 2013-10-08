@@ -26,5 +26,9 @@ $(document).ready(function(){
 		$(".contact_box").toggleClass("visible");
 		$(".contact_info").toggleClass("show");
 	});
+
+	// $(".card").on("click", function(){
+	// 	$(this).children(".data").toggleClass("visible");
+	// });
 });
 

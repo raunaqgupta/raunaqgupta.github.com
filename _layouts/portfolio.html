@@ -8,13 +8,16 @@
         {% for post in site.categories.portfolio %}
           <li class="card">
             <a href="{{post.url}}">
-              <div class="image" style="background: url(./img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 200%; background-repeat: no-repeat;">
-              </div>
+              <span class="image" style="background: url(./img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 200%; background-repeat: no-repeat;">
+              </span>
               <p>{{post.title}}</p>
-              <div class="overlay">
-                <p>{{post.abstract}}</p>
-              </div>
+              <div class="overlay"></div>
             </a>
+            <span class="data">
+                <h1>{{post.title}}</h1>
+                <h4>{{post.abstract}}</h4>
+                {{post.content}}
+            </span>
           </li>
         {% endfor %}
       </ul>
