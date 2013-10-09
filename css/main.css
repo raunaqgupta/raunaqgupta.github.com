@@ -63,40 +63,6 @@ i {
         color: #aaa;
         border-bottom: 2px solid orange; }
 
-/* business card - dimension ratio: 1.75 */
-.business_card {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 230px;
-  margin-top: -115px;
-  margin-left: -200px;
-  padding-top: 65px;
-  background-color: white;
-  color: #ccc;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  font-family: 'Josefin Slab', serif;
-  font-weight: normal;
-  text-align: center; }
-  .business_card .title {
-    font-size: 1.5em; }
-
-.continue {
-  position: fixed;
-  top: 75%;
-  left: 48%;
-  height: 50px;
-  line-height: 50px;
-  width: 50px;
-  background-color: #aaa;
-  border-radius: 100px;
-  text-align: center; }
-  .continue:hover {
-    background-color: #ccc;
-    line-height: 55px; }
-
 /* contact */
 .contact_box {
   width: 100%;
@@ -179,6 +145,10 @@ i {
         position: absolute;
         content: " ";
         top: -10px; }
+      .portfolio_list .card .data .close_flyout {
+        display: block;
+        width: 100%;
+        text-align: center; }
     .portfolio_list .card:nth-child(3n+1) .data.visible {
       display: block;
       left: 0; }
@@ -296,8 +266,6 @@ img.post-thumbnail:hover {
   background-color: rgba(0, 0, 0, 0);
   text-align: center;
   color: white;
-  cursor: -moz-zoom-out;
-  cursor: -webkit-zoom-out;
   z-index: -1;
   transition: background-color 150ms ease-in; }
   #lightroom.visible {
