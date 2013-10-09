@@ -1,8 +1,4 @@
 $(document).ready(function(){
-	// post back button action
-	$(".back-button").attr("onclick", '').click(function(){
-		$(".portfolio-post-box").fadeOut("fast", function(){});
-	});
 
 	// thumbnail onclick black room action
 	$(".post-thumbnail").attr("onclick", '').click(function(){
@@ -27,8 +23,22 @@ $(document).ready(function(){
 		$(".contact_info").toggleClass("show");
 	});
 
-	// $(".card").on("click", function(){
-	// 	$(this).children(".data").toggleClass("visible");
-	// });
+	// show portfolio piece
+	$(".card_link").on("click", function(e){
+		$(this).parent(".card").children(".data").toggleClass("visible");
+		$("#lightroom").toggleClass("visible");
+		var offset = $(this).offset();
+		offset.top -= 20;
+		$('html, body').animate({
+			scrollTop: offset.top
+		});
+	});
+
+	// close portfolio piece
+	$(".close_modal").on("click", function(e){
+		$(this).parents(".data").toggleClass("visible");
+		$("#lightroom").toggleClass("visible");
+		e.stopPropagation();
+	});
 });
 

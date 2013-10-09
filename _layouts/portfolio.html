@@ -7,13 +7,18 @@
       <ul class="portfolio_list">
         {% for post in site.categories.portfolio %}
           <li class="card">
-            <a href="{{post.url}}">
+            <a class="card_link" href="#">
               <span class="image" style="background: url(./img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 200%; background-repeat: no-repeat;">
               </span>
               <p>{{post.title}}</p>
-              <div class="overlay"></div>
             </a>
             <span class="data">
+                <ul class="post-control">
+                  <li class="date">{{ post.date || date_to_long_string }}
+                  </li><li class="tags">Category <strong>{{ post.tags }}</strong>
+                  </li><li class="close_modal"><i class="icon-remove icon-white"></i>
+                  </li>
+                </ul>
                 <h1>{{post.title}}</h1>
                 <h4>{{post.abstract}}</h4>
                 {{post.content}}

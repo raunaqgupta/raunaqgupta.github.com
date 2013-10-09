@@ -1,0 +1,12 @@
+@mixin data_child($data_left, $notch_left) {
+  .data {
+    &.visible{
+      display: block;
+      left: $data_left;
+    }
+
+    &:before {
+      left: $notch_left;
+    }
+  }
+}
