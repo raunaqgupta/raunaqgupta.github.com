@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+	var window_height = $(window).height();
+	var header_top = $("#header").offset().top - $(window).scrollTop();
+	var bgvideo_stop = -(window_height - 40);
+	$("#empty_header").css({"height":window_height});
+
 	// thumbnail onclick black room action
 	$(".post-thumbnail").attr("onclick", '').click(function(){
 		var image_src = $(this).attr("src");
@@ -29,9 +34,9 @@ $(document).ready(function(){
 		$("#lightroom").toggleClass("visible");
 		var offset = $(this).offset();
 		offset.top -= 20;
-		$('html, body').animate({
-			scrollTop: offset.top
-		});
+		// $('html, body').animate({
+		// 	scrollTop: offset.top
+		// });
 	});
 
 	// close portfolio piece
@@ -39,6 +44,19 @@ $(document).ready(function(){
 		$(this).parents(".data").toggleClass("visible");
 		$("#lightroom").toggleClass("visible");
 		e.stopPropagation();
+	});
+
+	//awesome scroll
+	$(window).scroll(function(e){
+		var v_offset = $("body").scrollTop();
+		var cv = (255 - v_offset > 20) ? (255 - v_offset).toString(16) : "0";
+		var title_top = (header_top - (v_offset*1.7) > 10) ? (header_top - (v_offset*1.7)) : "10px";
+		$("#header").css({
+			"color":"#"+cv+cv+cv,
+			"top":title_top
+		});
+		var bgvideo_top = (v_offset*-4 > bgvideo_stop) ? (v_offset*-4) : bgvideo_stop+"px";
+		$("#bgvideo").css({"top":bgvideo_top});
 	});
 });
 
