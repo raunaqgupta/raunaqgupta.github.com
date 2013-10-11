@@ -1,9 +1,12 @@
 $(document).ready(function(){
 
 	var window_height = $(window).height();
+	var window_width = $(window).width();
 	var header_top = $("#header").offset().top - $(window).scrollTop();
 	var bgvideo_stop = -(window_height - 40);
+	var title_top = 0;
 	$("#empty_header").css({"height":window_height});
+	$("#header").css({"left":window_width/2 - $("#header").width()/2});
 
 	// thumbnail onclick black room action
 	$(".post-thumbnail").attr("onclick", '').click(function(){
@@ -33,10 +36,12 @@ $(document).ready(function(){
 		$(this).parent(".card").children(".data").toggleClass("visible");
 		$("#lightroom").toggleClass("visible");
 		var offset = $(this).offset();
-		offset.top -= 20;
-		// $('html, body').animate({
-		// 	scrollTop: offset.top
-		// });
+		console.log(offset);
+		e.stopPropagation();
+		$('html, body').animate({
+			scrollTop: offset.top - 144
+		});
+		console.log("EMPTY:" + $("#empty_header").height());
 	});
 
 	// close portfolio piece
@@ -48,15 +53,19 @@ $(document).ready(function(){
 
 	//awesome scroll
 	$(window).scroll(function(e){
+		console.log($("#empty_header").height());
 		var v_offset = $("body").scrollTop();
 		var cv = (255 - v_offset > 20) ? (255 - v_offset).toString(16) : "0";
-		var title_top = (header_top - (v_offset*1.7) > 10) ? (header_top - (v_offset*1.7)) : "10px";
+		title_top = (header_top - (v_offset*0.9) > 10) ? (header_top - (v_offset*0.9)) : "1em";
 		$("#header").css({
 			"color":"#"+cv+cv+cv,
 			"top":title_top
 		});
-		var bgvideo_top = (v_offset*-4 > bgvideo_stop) ? (v_offset*-4) : bgvideo_stop+"px";
+		var bgvideo_top = (v_offset*-2 > bgvideo_stop) ? (v_offset*-2) : bgvideo_stop+"px";
 		$("#bgvideo").css({"top":bgvideo_top});
+		$("#empty_header").css({
+			"height": (window_height - v_offset*0.5)
+		});
 	});
 });
 
