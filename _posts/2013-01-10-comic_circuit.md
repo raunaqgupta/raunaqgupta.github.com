@@ -32,7 +32,7 @@ The ideation stage went through several iterations of paper based prototypes, re
 The paper can be viewed here: <a href="/res/res_comic_circuit/comic_circuit_chi2013.pdf">Comic Circuit</a> and the accompanying poster:
 
 <figure class="post-image">
-	<img src="/img/img_comic_circuit/comic_circuit_poster_500.png"></img>
+	<img src="/img/img_comic_circuit/comic_circuit_poster.png"></img>
 	<figcaption>CHI 2013 Poster for Comic Circuit</figcaption>
 </figure>
 
