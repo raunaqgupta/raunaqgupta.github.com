@@ -9,7 +9,10 @@ abstract: Uniting anonymous crowds through collective collaboration
 
 Collablocks is a social experimental game which tries to put a co-located group of people together to solve a 3D based puzzle. The game itself is displayed on a public screen and individual gamers can join via their mobile devices.
 
-<p style="text-align: center"><iframe src="//player.vimeo.com/video/61863214?byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+<p style="text-align: center">
+	<iframe src="//player.vimeo.com/video/61863214?byline=0&amp;portrait=0" width="500" height="281" frameborder="0">
+	</iframe>
+</p>
 
 <h4>Concept</h4>
 

@@ -179,6 +179,10 @@ i {
         position: absolute;
         content: " ";
         top: -10px; }
+      .portfolio_list .card .data .close_flyout {
+        display: block;
+        width: 100%;
+        text-align: center; }
     .portfolio_list .card:nth-child(3n+1) .data.visible {
       display: block;
       left: 0; }
@@ -273,6 +277,9 @@ div.portfolio-post-box {
   .post-image-thumbnails .post-thumbnail {
     max-width: 150px;
     border: 1px solid #ddd; }
+  .post-image-thumbnails figcaption {
+    font-size: 12px;
+    font-style: italic; }
 
 /* lightbox overlay */
 #lightroom {

@@ -27,7 +27,7 @@ The ideation stage went through several iterations of paper based prototypes, re
 	<figcaption>Photoshop prototyping</figcaption>
 </figure>
 
-<h4>Paper & Poster</h4>
+<h4>Paper &amp; Poster</h4>
 
 The paper can be viewed here: <a href="/res/res_comic_circuit/comic_circuit_chi2013.pdf">Comic Circuit</a> and the accompanying poster:
 

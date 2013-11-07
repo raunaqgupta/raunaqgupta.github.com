@@ -245,6 +245,12 @@ i {
         content: " ";
         top: -10px;
       }
+
+      .close_flyout {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
     }
 
     &:nth-child(3n+1){
@@ -374,6 +380,11 @@ div.portfolio-post-box {
   .post-thumbnail {
     max-width: 150px;
     border: 1px solid #ddd;
+  }
+
+  figcaption {
+    font-size: 12px;
+    font-style: italic;
   }
 }
 
