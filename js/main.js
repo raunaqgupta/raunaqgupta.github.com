@@ -15,7 +15,6 @@ $(document).ready(function(){
 	// show/hide contact box
 	$(".contact_me").on('click', function(){
 		$(".contact_box").toggleClass("visible");
-		$(".contact_info").toggleClass("show");
 	});
 
 	// show portfolio piece
