@@ -19,14 +19,18 @@ Collablocks is a social experimental game which tries to put a co-located group 
 It is a social experimental game that aims at providing a platform to engage large audiences in a collaborative gaming experience. The video game is composed of a 3D puzzle that participants from the audience can join in together and solve collaboratively. The participants connect by visiting the browser application and find themselves in control of a layer of blocks in a 3D grid of blocks where each participant each such layer. The goal of the game is to fill a randomly generated wireframe within this cube by working together.
 
 <figure class="post-image">
-	<img src="/img/img_collablocks/one.png"></img>
+	<img lazysrc="/img/img_collablocks/one.png">
 	<figcaption>Browser view</figcaption>
 </figure>
 
 <figure class="post-image">
-	<img src="/img/img_collablocks/four.png"></img>
+	<img lazysrc="/img/img_collablocks/four.png">
 	<figcaption>Mobile view</figcaption>
 </figure>
+
+<h4>Technology</h4>
+
+The app built atop Node.JS and socketstream and the visualizations were created with WebGL and Javascript.
 
 <h4>Role</h4>
 
@@ -35,7 +39,3 @@ We built and tested Collablocks during Facebook CMU hackathon in 2012 and were r
 <h4>Team</h4>
 
 [Jonas Gebhardt](http://jonasgebhardt.net) + [Jonathan Chan](http://www.jon-chan.com/work) + [Noah Bernstein](http://noahbornstein.com/)
-
-<h4>Technology</h4>
-
-The app built atop Node.JS and socketstream and the visualizations were created with WebGL and Javascript.

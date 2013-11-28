@@ -3,18 +3,13 @@ $(document).ready(function(){
 	// thumbnail onclick black room action
 	$(".post-thumbnail").attr("onclick", '').click(function(){
 		var image_src = $(this).attr("src");
-		if($("#lightbox").length > 0){
-			$("#lightbox").children("#content").children().attr("src", image_src);
-			$("#lightbox").show();
-		}
-		else {
-			$('body').append('<div id="lightbox"><div id="content"><img src="' + image_src + '" /></div></div>');
-		}
+		$("#lightbox").children("img").attr("src", image_src);
+		$("#lightbox").toggleClass("visible");
 	});
 
 	// hide lightbox
 	$("body").on('click', '#lightbox', function(){
-		$("#lightbox").hide();
+		$("#lightbox").toggleClass("visible");
 	});
 
 	// show/hide contact box
@@ -25,7 +20,11 @@ $(document).ready(function(){
 
 	// show portfolio piece
 	$(".card_link").on("click", function(e){
-		$(this).parent(".card").children(".data").toggleClass("visible");
+		var post_data = $(this).parent(".card").children(".data");
+		post_data.toggleClass("visible");
+		post_data.find("img").each(function(i,e){
+			$(this).attr("src", $(this).attr("lazysrc"));
+		});
 		$("#lightroom").toggleClass("visible");
 		var offset = $(this).offset();
 		offset.top -= 20;
@@ -36,7 +35,11 @@ $(document).ready(function(){
 
 	// close portfolio piece
 	$(".close_modal").on("click", function(e){
-		$(this).parents(".data").toggleClass("visible");
+		var post_data = $(this).parents(".data");
+		post_data.toggleClass("visible");
+		post_data.find("iframe").each(function(i,e){
+			$(this).attr("src", $(this).attr("src"));
+		});
 		$("#lightroom").toggleClass("visible");
 		e.stopPropagation();
 	});

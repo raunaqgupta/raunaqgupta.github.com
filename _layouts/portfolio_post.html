@@ -1,19 +1,19 @@
 {% include page_header.html %}
-{% include header_nav.html %}
 <div class="container">
   <div class="row">
-    <div class="span12">
-      {% include post_nav.html %}
+    <div class="span7">
+      <span class="data">
+        <ul class="post-control">
+          <li class="date">{{ page.date || date_to_long_string }}
+          </li><li class="tags">Category <strong>{{ page.tags }}</strong>
+          </li><li class="link"><a href="{{page.url}}" target="_blank">Link</a>
+          </li>
+        </ul>
+        <h1>{{page.title}}</h1>
+        <h4>{{page.abstract}}</h4>
+        {{content}}
+      </span>
     </div>
   </div>
-
-	<div class="row">
-		<div class="span12 portfolio-post-box">
-      <h1>{{page.title}}</h1>
-  		<h4>{{page.abstract}}</h4>
-  		<p>{{content}}</p>
-		</div>
-	</div>
 </div>
-
 {% include page_footer.html %}

@@ -246,6 +246,10 @@ i {
         top: -10px;
       }
 
+      .post {
+        width: 100%;
+      }
+
       .close_flyout {
         display: block;
         width: 100%;
@@ -321,7 +325,7 @@ div.portfolio-post-box {
 
 .post-control {
   list-style: none;
-  margin: 0;
+  margin-bottom: 10px;
   text-align: right;
 
   li {
@@ -343,6 +347,11 @@ div.portfolio-post-box {
       color: #aaa;
     }
 
+    &.link {
+      background-color: #eee;
+      color: #aaa;
+    }
+
     &.close_modal {
       background-color: hsla(360, 45%, 47%, 1);
       i {
@@ -361,11 +370,12 @@ div.portfolio-post-box {
 
 .post-image {
   text-align: center;
+  margin: 10px;
 
   img {
-    border: 1px solid #ddd;
     max-width: 500px;
     min-width: 500px;
+    border: 1px solid #ddd;
   }
 
   figcaption {
@@ -376,10 +386,17 @@ div.portfolio-post-box {
 
 .post-image-thumbnails {
   text-align: center;
+  margin: 0;
 
   .post-thumbnail {
     max-width: 150px;
     border: 1px solid #ddd;
+    margin-bottom: 5px;
+
+    &:hover {
+      border: 1px solid #aaa;
+      cursor: pointer;
+    }
   }
 
   figcaption {
@@ -409,14 +426,30 @@ div.portfolio-post-box {
   }
 }
 
-div#lightbox > div#content {
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0);
+  text-align: center;
+  color: white;
+  display: none;
+  transition: background-color 150ms ease-in;
+
+  &.visible {
+    display: inline;
+    z-index: 30;
+    background-color: rgba(0,0,0,0.6);
+    transition: background-color 50ms ease-out;
+  }
+}
+
+div#lightbox > img {
   padding: 20px;
   height: 100%;
   overflow: hidden;
-}
-
-div#lightbox > div#content > img {
-  height: 100%;
 }
 
 /* responsive */

@@ -8,7 +8,7 @@ abstract: Early graphic design work
 ---
 
 <figure class="post-image">
-	<img src="/img/img_crunchbang_sticker/thumbnail.jpg"></img>
+	<img lazysrc="/img/img_crunchbang_sticker/thumbnail.jpg"></img>
 	<figcaption>Sticker design</figcaption>
 </figure>
 

@@ -17,9 +17,9 @@ Our demo titled 'The Tartan Touch' (named after CMU's mascot) was a web applicat
 
 <h4>Technology</h4>
 
-Input Notification Server was developed with C# and Python
+Input Notification Server was developed with C# and Python.
 The front-end interface was coded in HTML5/Javascript atop a Node.JS backend.
 
 <h4>Team</h4>
 
-[Jonas Gebhardt](http://jonasgebhardt.net)
+[Jonas Gebhardt](http://jonasgebhardt.net) + [Kevin Scott](http://www.herdingpixels.com/) + [Asim Mittal](http://asimmittal.net)
