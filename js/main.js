@@ -43,5 +43,21 @@ $(document).ready(function(){
 		$("#lightroom").toggleClass("visible");
 		e.stopPropagation();
 	});
+
+	//css-3d transform - title
+	$("#header_container").on("mousemove", function(e){
+	  var midX =  $(this).width() / 2;
+	  var midY = $(this).height() / 2;
+	  var relX = e.pageX - $(this).offset().left;
+	  var relY = e.pageY - $(this).offset().top;
+	  var degY = Math.max(Math.min(relX - midX, 30), -30);
+	  var degX = Math.max(Math.min(relY*0.5 - midY, 20), -20);
+	  $(this).find("#name").css("-webkit-transform", "perspective(400px) rotateY(" + degY + "deg) rotateX(" + degX + "deg)");
+	});
+
+	//css-3d undo
+	$("#header_container").on("mouseout", function(e){
+		$(this).find("#name").css("-webkit-transform", "perspective(0px) rotateY(0deg) rotateX(0deg)");
+	});
 });
 
