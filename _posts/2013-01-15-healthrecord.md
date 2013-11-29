@@ -1,6 +1,6 @@
 ---
 layout: portfolio_post
-categories: portfolio featured
+categories: portfolio
 title: Health Record Redesign
 image_folder: img_healthrecord
 tags: Print

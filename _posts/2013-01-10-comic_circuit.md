@@ -1,6 +1,6 @@
 ---
 layout: portfolio_post
-categories: portfolio featured
+categories: portfolio
 tags: Crowdsource
 title: Comic Circuit
 image_folder: img_comic_circuit
