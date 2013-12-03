@@ -51,11 +51,13 @@ $(document).ready(function(){
 	  var relY = e.pageY - $(this).offset().top;
 	  var degY = Math.max(Math.min(relX - midX, 30), -30);
 	  var degX = Math.max(Math.min(relY*0.5 - midY, 20), -20);
+	  $(this).find("#name").css("transform", "perspective(400px) rotateY(" + degY + "deg) rotateX(" + degX + "deg)");
 	  $(this).find("#name").css("-webkit-transform", "perspective(400px) rotateY(" + degY + "deg) rotateX(" + degX + "deg)");
 	});
 
 	//css-3d undo
 	$("#header_container").on("mouseout", function(e){
+		$(this).find("#name").css("transform", "perspective(0px) rotateY(0deg) rotateX(0deg)");
 		$(this).find("#name").css("-webkit-transform", "perspective(0px) rotateY(0deg) rotateX(0deg)");
 	});
 });
