@@ -6,6 +6,7 @@ title: Comic Circuit
 image_folder: img_comic_circuit
 abstract: A web service to foster crowdsourced comic creation. CHI 2013 design competition finalist.
 ---
+<h2>Comic Circuit</h2>
 
 Comic Circuit was a CHI 2013 student design competition finalist. It aims to construct an online community and a user interface toolkit to crowdsource news articles into comic strips.
 

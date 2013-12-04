@@ -6,6 +6,7 @@ image_folder: img_healthrecord
 tags: Print
 abstract: Visual overhaul of patient medical records for print and web.
 ---
+<h2>Health Record Redesign</h2>
 
 As part of a VA sponsored health design challenge, our team was responsible for re-thinking visual components of the patient health records. The challenge sought to improve upon the current plaintext document by envisioning a patient-centric web and print alternative. We were showcased among the top 25 entries to the <a href="http://s3.amazonaws.com/challengepost/zip_files/production/5066/zip_files/ReimaginingPatientRecord.pdf?1354410791">challenge</a>.
 

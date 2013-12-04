@@ -6,6 +6,7 @@ title: Crunchbang Linux
 image_folder: img_crunchbang_sticker
 abstract: Early graphic design work
 ---
+<h2>Crunchbang Linux Stickers</h2>
 
 <figure class="post-image">
 	<img lazysrc="/img/img_crunchbang_sticker/thumbnail.jpg"></img>

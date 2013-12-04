@@ -6,6 +6,7 @@ title: Historian
 image_folder: img_historian
 abstract: Improving an individual's community involvement through crowdsourced local community tasks.
 ---
+<h2>Historian</h2>
 
 Historian is a proof of concept design to improve how browser history is visualized and utilized for better memory recall.
 

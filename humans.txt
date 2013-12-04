@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Raunaq Gupta -- All -- @raunaqgupta
 
 # THANKS
 
-    <name>
+    All my team members. Thanks y'all.
 
 # TECHNOLOGY COLOPHON
 

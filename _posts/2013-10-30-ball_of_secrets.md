@@ -6,9 +6,10 @@ title: The Ball Of Secrets
 image_folder: img_ball_of_secrets
 abstract: Combine. Find. Keep. Share.
 ---
+<h2>Ball Of Secrets</h2>
 
 <figure class="post-image">
-	<img lazysrc="/img/img_ball_of_secrets/ballOfSecrets.jpg">
+	<img lazysrc="/img/img_ball_of_secrets/ballOfSecrets.png">
 </figure>
 <hr>
 

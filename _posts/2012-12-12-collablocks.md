@@ -6,6 +6,7 @@ tags: WebGL
 image_folder: img_collablocks
 abstract: Uniting anonymous crowds through collective collaboration
 ---
+<h2>Collablocks</h2>
 
 Collablocks is a social experimental game which tries to put a co-located group of people together to solve a 3D based puzzle. The game itself is displayed on a public screen and individual gamers can join via their mobile devices.
 
