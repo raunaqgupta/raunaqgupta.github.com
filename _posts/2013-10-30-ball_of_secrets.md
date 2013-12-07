@@ -11,7 +11,6 @@ abstract: Combine. Find. Keep. Share.
 <figure class="post-image">
 	<img lazysrc="/img/img_ball_of_secrets/ballOfSecrets.png">
 </figure>
-<hr>
 
 Ball of Secrets is a hardware/toy concept which stemmed from a discussion of creating tangible memories for TEI 2013. The Ball of Secrets was designed to experiment a unique interaction, providing play like attributes to storing secrets. It was submitted as an entry for the creative showcase section at ACE 2013 (http://www.advancesincomputerentertainment.org/)
 
@@ -20,12 +19,12 @@ Ball of Secrets is a hardware/toy concept which stemmed from a discussion of cre
 Ball of Secrets provides the holder of the ball with a set of 6 buttons. These 6 buttons can be pressed in various combination to activate the microphone to record audio samples or to listen to a previously stored audio sample.
 
 <figure class="post-image">
-	<img lazysrc="/img/img_ball_of_secrets/sketch.png">
+	<img lazysrc="/img/img_ball_of_secrets/sketch.png" class="enlarge_img">
 	<figcaption>Early sketch</figcaption>
 </figure>
 
 <figure class="post-image">
-	<img lazysrc="/img/img_ball_of_secrets/flowchart.jpg">
+	<img lazysrc="/img/img_ball_of_secrets/state_diagram.png" class="enlarge_img">
 	<figcaption>Interaction State Diagram</figcaption>
 </figure>
 
@@ -34,7 +33,7 @@ Ball of Secrets provides the holder of the ball with a set of 6 buttons. These 6
 The first prototype was geared towards getting the basic structure, electronics and interactions in place.
 
 <figure class="post-image">
-	<img lazysrc="/img/img_ball_of_secrets/first_prototype.jpg">
+	<img lazysrc="/img/img_ball_of_secrets/first_prototype.jpg" class="enlarge_img">
 	<figcaption>First prototype</figcaption>
 </figure>
 

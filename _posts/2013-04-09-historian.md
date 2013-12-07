@@ -30,12 +30,12 @@ Two levels of prototype fidelity were used to define the various screens and app
 </figure>
 
 <figure class="post-image">
-	<img lazysrc="/img/img_historian/hi-fid/1.png">
+	<img lazysrc="/img/img_historian/hi-fid/1.png" class="enlarge_img">
 	<figcaption>Hi-fidelity Prototype</figcaption>
 </figure>
 
 <figure class="post-image">
-	<img lazysrc="/img/img_historian/hi-fid/3.png">
+	<img lazysrc="/img/img_historian/hi-fid/3.png" class="enlarge_img">
 	<figcaption>Hi-fidelity Prototype</figcaption>
 </figure>
 

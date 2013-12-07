@@ -64,46 +64,38 @@ i {
         list-style-type: none;
         text-decoration: none;
         color: #555;
-        padding: 3px 8px;
+        padding: 0px 8px;
         font-size: 0.9em;
         font-weight: bold; }
+      #navbar ul a.contact_me li {
+        margin: 0;
+        padding-top: 0;
+        background-color: #eee;
+        width: 50px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px; }
+        #navbar ul a.contact_me li img {
+          width: 15px; }
+      #navbar ul a.contact_me:hover li {
+        cursor: default;
+        border: none; }
       #navbar ul a:hover li {
         color: #aaa;
         border-bottom: 2px solid orange; }
 
-/* business card - dimension ratio: 1.75 */
-.business_card {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 230px;
-  margin-top: -115px;
-  margin-left: -200px;
-  padding-top: 65px;
-  background-color: white;
-  color: #ccc;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  font-family: 'Josefin Slab', serif;
-  font-weight: normal;
+#portfolio_hr {
   text-align: center; }
-  .business_card .title {
-    font-size: 1.5em; }
-
-.continue {
-  position: fixed;
-  top: 75%;
-  left: 48%;
-  height: 50px;
-  line-height: 50px;
-  width: 50px;
-  background-color: #aaa;
-  border-radius: 100px;
-  text-align: center; }
-  .continue:hover {
-    background-color: #ccc;
-    line-height: 55px; }
+  #portfolio_hr .hr_left, #portfolio_hr .hr_right {
+    width: 39%;
+    display: inline-block;
+    margin: 0;
+    padding-top: 10px; }
+  #portfolio_hr h2 {
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 0;
+    font-family: 'Josefin Slab';
+    color: #aaa; }
 
 /* contact */
 .contact_box {
@@ -123,7 +115,7 @@ i {
       border-radius: 5px;
       box-shadow: 1px 1px 2px #888; }
   .contact_box .contact_info .contact_desc {
-    padding-top: 10px;
+    padding-top: 30px;
     font-size: 0.9em; }
   .contact_box .contact_info .contact_details {
     text-align: center;
@@ -284,6 +276,11 @@ div.portfolio-post-box {
     max-width: 500px;
     min-width: 500px;
     border: 1px solid #ddd; }
+    .post-image img.enlarge_img:hover {
+      border: 1px solid #aaa;
+      cursor: pointer;
+      cursor: -webkit-zoom-in;
+      cursor: -moz-zoom-in; }
   .post-image figcaption {
     font-size: 12px;
     font-style: italic; }

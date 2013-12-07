@@ -2,3 +2,4 @@ name: Raunaq Gupta
 markdown: maruku
 pygments: true
 port: 5000
+permalink: none

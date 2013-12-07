@@ -81,9 +81,31 @@ i {
         list-style-type: none;
         text-decoration: none;
         color: #555;
-        padding: 3px 8px;
+        padding: 0px 8px;
         font-size: 0.9em;
         font-weight: bold;
+      }
+
+      &.contact_me {
+        li {
+          margin: 0;
+          padding-top: 0;
+          background-color: #eee;
+          width: 50px;
+          border-top-left-radius: 2px;
+          border-top-right-radius: 2px;
+
+          img {
+            width: 15px;
+          }
+        }
+
+        &:hover {
+          li {
+            cursor: default;
+            border: none;
+          }
+        };
       }
 
       &:hover {
@@ -96,44 +118,21 @@ i {
   }
 }
 
-/* business card - dimension ratio: 1.75 */
-
-.business_card {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 230px;
-  margin-top: -115px;
-  margin-left: -200px;
-  padding-top: 65px;
-  background-color: white;
-  color: #ccc;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  font-family: 'Josefin Slab', serif;
-  font-weight: normal;
+#portfolio_hr {
   text-align: center;
-
-  .title {
-    font-size: 1.5em;
+  .hr_left, .hr_right {
+    width: 39%;
+    display: inline-block;
+    margin: 0;
+    padding-top: 10px;
   }
-}
 
-.continue {
-  position: fixed;
-  top: 75%;
-  left: 48%;
-  height: 50px;
-  line-height: 50px;
-  width: 50px;
-  background-color: #aaa;
-  border-radius: 100px;
-  text-align: center;
-
-  &:hover {
-    background-color: #ccc;
-    line-height: 55px;
+  h2 {
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 0;
+    font-family: 'Josefin Slab';
+    color: #aaa;
   }
 }
 
@@ -165,7 +164,7 @@ i {
     }
 
     .contact_desc {
-      padding-top: 10px;
+      padding-top: 30px;
       font-size: 0.9em;
     }
 
@@ -390,6 +389,13 @@ div.portfolio-post-box {
     max-width: 500px;
     min-width: 500px;
     border: 1px solid #ddd;
+
+    &.enlarge_img:hover {
+      border: 1px solid #aaa;
+      cursor: pointer;
+      cursor: -webkit-zoom-in;
+      cursor: -moz-zoom-in;
+    }
   }
 
   figcaption {

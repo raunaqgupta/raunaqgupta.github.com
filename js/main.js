@@ -1,23 +1,15 @@
 $(document).ready(function(){
 
-	// thumbnail onclick black room action
-	$(".post-thumbnail").attr("onclick", '').click(function(){
+	$(".post-thumbnail, .enlarge_img").attr("onclick", '').click(function(){
 		var image_src = $(this).attr("src");
 		$("#lightbox").children("img").attr("src", image_src);
 		$("#lightbox").toggleClass("visible");
 	});
 
-	// hide lightbox
 	$("body").on('click', '#lightbox', function(){
 		$("#lightbox").toggleClass("visible");
 	});
 
-	// show/hide contact box
-	$(".contact_me").on('click', function(){
-		$(".contact_box").toggleClass("visible");
-	});
-
-	// show portfolio piece
 	$(".card_link").on("click", function(e){
 		var post_data = $(this).parent(".card").children(".data");
 		post_data.toggleClass("visible");
@@ -32,7 +24,6 @@ $(document).ready(function(){
 		});
 	});
 
-	// close portfolio piece
 	$(".close_modal").on("click", function(e){
 		var post_data = $(this).parents(".data");
 		post_data.toggleClass("visible");
@@ -43,7 +34,6 @@ $(document).ready(function(){
 		e.stopPropagation();
 	});
 
-	//css-3d transform - title
 	$("#header_container").on("mousemove", function(e){
 	  var midX =  $(this).width() / 2;
 	  var midY = $(this).height() / 2;
@@ -55,7 +45,6 @@ $(document).ready(function(){
 	  $(this).find("#name").css("-webkit-transform", "perspective(400px) rotateY(" + degY + "deg) rotateX(" + degX + "deg)");
 	});
 
-	//css-3d undo
 	$("#header_container").on("mouseout", function(e){
 		$(this).find("#name").css("transform", "perspective(0px) rotateY(0deg) rotateX(0deg)");
 		$(this).find("#name").css("-webkit-transform", "perspective(0px) rotateY(0deg) rotateX(0deg)");
