@@ -66,8 +66,6 @@ h1, h2 {
       width: 25%;
       margin: 1%;
       text-align: left; }
-      .no-touch #page_two #portfolio_list .card:hover .abstract {
-        display: block; }
       #page_two #portfolio_list .card a {
         text-decoration: none; }
         #page_two #portfolio_list .card a .image {
