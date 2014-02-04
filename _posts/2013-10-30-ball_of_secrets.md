@@ -37,9 +37,7 @@ The first prototype was geared towards getting the basic structure, electronics 
 	<figcaption>First prototype</figcaption>
 </figure>
 
-The second prototype saw us moving to a smaller form factor, a better appreciation of the electronics in use and moving around the components for better recording and feedback. For instance we we added a LED on the side closer to the user which would turn red when the recording capability was activated.
-
-The second prototype was also when we started taking more photos of the process.
+The second prototype saw us moving to a smaller form factor, a better appreciation of the electronics in use and moving around the components to facilitate better recording and feedback. For instance we added a LED on the side closer to the user which would turn red when the recording capability was activated.
 
 <figure class="post-image-thumbnails">
 	<img lazysrc="/img/img_ball_of_secrets/2prototype_1.jpg" class="post-thumbnail img-polaroid">

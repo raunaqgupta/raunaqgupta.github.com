@@ -1,14 +1,15 @@
 ---
 layout: portfolio_post
-category: portfolio
+categories: portfolio featured
 tags: Web
 title: Historian
 image_folder: img_historian
-abstract: Improving an individual's community involvement through crowdsourced local community tasks.
+abstract: Redesigning web browser history for faster recall.
+overview: Historian is a proof of concept design to improve how browser history is visualized and utilized for faster recall.
+contributions: Responsible for competitive analysis and literature review, wireframing, application navigation and video editing. Also contributed to hi-fidelity assets in Photoshop.
+team: Kristine Mendoza, Namrata Kannan, Raymond Liaw
+duration: 2 Weeks
 ---
-<h2>Historian</h2>
-
-Historian is a proof of concept design to improve how browser history is visualized and utilized for better memory recall.
 
 <p style="text-align:center">
 <iframe width="560" height="360" src="//www.youtube.com/embed/ZanAWwaJ3tY" frameborder="0"> </iframe>
@@ -38,11 +39,3 @@ Two levels of prototype fidelity were used to define the various screens and app
 	<img lazysrc="/img/img_historian/hi-fid/3.png" class="enlarge_img">
 	<figcaption>Hi-fidelity Prototype</figcaption>
 </figure>
-
-<h4>Role</h4>
-
-I was responsible for the literature review, wireframing, application navigation and video narration and editing. I also contributed to hi-fidelity asset creation.
-
-<h4>Team</h4>
-
-[Raymond Liaw](http://raymondliaw.com) + [Namrata Kannan](http://namratakannan.com/) + [Kristine Mendoza](http://kdmendoza.com/)

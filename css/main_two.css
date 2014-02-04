@@ -1,0 +1,343 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; }
+
+html, body {
+  margin: 0;
+  height: 100%; }
+
+h1, h2 {
+  margin: 0 auto; }
+
+.container {
+  width: 100%;
+  height: 100%; }
+
+#page_one {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("/img/common/background.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  text-align: center; }
+  #page_one ul#nav_list {
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5em;
+    list-style: none; }
+    #page_one ul#nav_list li {
+      display: inline-block;
+      padding: 10px;
+      text-align: center;
+      font-size: 1.1em;
+      color: white; }
+      #page_one ul#nav_list li:hover {
+        cursor: pointer;
+        background-color: orange; }
+  #page_one #introduction {
+    position: relative;
+    top: 38%; }
+    #page_one #introduction #brief {
+      margin-top: 1%;
+      font-size: 1.2em; }
+
+#page_two {
+  position: relative;
+  width: 100%;
+  background-color: #eee;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-top: 5px solid #999; }
+  #page_two #portfolio_title {
+    color: lightslategrey; }
+  #page_two #portfolio_list {
+    list-style: none;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0 10px; }
+    #page_two #portfolio_list .card {
+      position: relative;
+      display: inline-block;
+      width: 25%;
+      margin: 1%;
+      text-align: left; }
+      #page_two #portfolio_list .card:hover .abstract {
+        display: block; }
+      #page_two #portfolio_list .card a {
+        text-decoration: none; }
+        #page_two #portfolio_list .card a .image {
+          display: block;
+          width: 100%;
+          height: 200px;
+          border: 1px solid #ddd; }
+        #page_two #portfolio_list .card a .title {
+          padding: 10px;
+          font-size: 1.3em;
+          color: #444;
+          margin: 0; }
+        #page_two #portfolio_list .card a .abstract {
+          color: black;
+          float: left;
+          position: absolute;
+          top: 0;
+          background: orange;
+          width: 100%;
+          height: 200px;
+          opacity: 0.95;
+          padding: 10px;
+          display: none; }
+      #page_two #portfolio_list .card .data {
+        display: none;
+        position: relative;
+        float: left;
+        width: 318%;
+        padding-bottom: 30px;
+        text-align: left;
+        background-color: white;
+        border: 1px solid #ddd;
+        z-index: 20;
+        margin-bottom: 10px; }
+        #page_two #portfolio_list .card .data .post-control {
+          list-style: none;
+          margin-bottom: 10px;
+          text-align: right; }
+          #page_two #portfolio_list .card .data .post-control li {
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            padding-left: 0.5em;
+            padding-right: 0.5em; }
+            #page_two #portfolio_list .card .data .post-control li.date {
+              height: 25px;
+              background-color: #eee;
+              color: #aaa; }
+            #page_two #portfolio_list .card .data .post-control li.tags {
+              background-color: #ddd;
+              color: #aaa; }
+            #page_two #portfolio_list .card .data .post-control li.link {
+              background-color: #eee;
+              color: #aaa; }
+            #page_two #portfolio_list .card .data .post-control li.close_modal {
+              background-color: #ae4242; }
+              #page_two #portfolio_list .card .data .post-control li.close_modal i {
+                background-position: -311px 1px; }
+              #page_two #portfolio_list .card .data .post-control li.close_modal:hover {
+                background-color: rgba(174, 66, 66, 0.5);
+                cursor: pointer; }
+        #page_two #portfolio_list .card .data .post_title {
+          margin-left: 4%; }
+        #page_two #portfolio_list .card .data .post_abstract {
+          margin-left: 4%; }
+        #page_two #portfolio_list .card .data .post_overview {
+          display: inline-block;
+          width: 25%;
+          margin-top: 30px;
+          padding: 10px;
+          background: #eee;
+          border-top: 1px solid #ddd;
+          border-right: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          vertical-align: top; }
+        #page_two #portfolio_list .card .data .post {
+          display: inline-block;
+          width: 74%;
+          padding-top: 30px;
+          padding-left: 60px;
+          padding-right: 60px; }
+        #page_two #portfolio_list .card .data .close_flyout {
+          display: block;
+          width: 100%;
+          text-align: center; }
+      #page_two #portfolio_list .card:nth-child(3n+1) .data.visible {
+        display: block;
+        left: 0; }
+      #page_two #portfolio_list .card:nth-child(3n+1) .data:before {
+        left: 0; }
+      #page_two #portfolio_list .card:nth-child(3n+2) .data.visible {
+        display: block;
+        left: -109%; }
+      #page_two #portfolio_list .card:nth-child(3n+2) .data:before {
+        left: 0; }
+      #page_two #portfolio_list .card:nth-child(3n) .data.visible {
+        display: block;
+        left: -218%; }
+      #page_two #portfolio_list .card:nth-child(3n) .data:before {
+        left: 0; }
+
+/* images */
+.post-image {
+  text-align: center;
+  margin: 10px; }
+  .post-image img {
+    max-width: 75%;
+    min-width: 500px; }
+    .post-image img.enlarge_img:hover {
+      cursor: pointer;
+      cursor: -webkit-zoom-in;
+      cursor: -moz-zoom-in; }
+  .post-image figcaption {
+    font-size: 12px;
+    font-style: italic; }
+
+.post-image-thumbnails {
+  text-align: center;
+  margin: 0; }
+  .post-image-thumbnails .post-thumbnail {
+    max-width: 150px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px; }
+    .post-image-thumbnails .post-thumbnail:hover {
+      border: 1px solid #aaa;
+      cursor: pointer;
+      cursor: -webkit-zoom-in;
+      cursor: -moz-zoom-in; }
+  .post-image-thumbnails figcaption {
+    font-size: 12px;
+    font-style: italic; }
+
+/* button */
+.custom_button {
+  background-color: orange;
+  color: white;
+  font-size: 0.9em;
+  padding: 10%;
+  border-radius: 4px; }
+  .custom_button:hover {
+    cursor: pointer;
+    background-color: #eee;
+    color: orange; }
+
+#page_three {
+  width: 100%;
+  height: 70px;
+  background-color: #ccc;
+  padding: 1% 0;
+  font-size: 1.5em;
+  color: #aaa;
+  text-align: center; }
+  #page_three ul {
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    display: inline-block; }
+    #page_three ul li {
+      display: inline-block;
+      padding: 0 1%;
+      vertical-align: middle; }
+      #page_three ul li img {
+        height: 42px; }
+
+#page_four {
+  width: 100%;
+  background-color: #aaa;
+  padding: 30px 50px;
+  text-align: center;
+  color: lightslategrey; }
+  #page_four ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 20px 0; }
+    #page_four ul li {
+      display: inline-block; }
+    #page_four ul #photo_self img {
+      width: 150px;
+      border-radius: 100px;
+      border: 2px solid #eee; }
+    #page_four ul #about_self {
+      width: 35%;
+      vertical-align: middle;
+      text-align: left;
+      margin-left: 8%;
+      color: white; }
+      #page_four ul #about_self #social {
+        list-style: none;
+        text-align: left;
+        margin-right: 1%;
+        margin-bottom: 0; }
+        #page_four ul #about_self #social li {
+          display: inline-block; }
+
+#page_five {
+  background: #aaa;
+  text-align: center;
+  padding: 0.5% 0;
+  font-size: 0.8em;
+  color: white; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #page_two #portfolio_list li {
+    width: 95%;
+    background-color: blue;
+    margin-bottom: 10px; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #introduction {
+    color: white; }
+    #introduction #brief {
+      margin-top: 1%;
+      font-size: 1.2em; }
+
+  #page_two #portfolio_list .card {
+    width: 30%; }
+    #page_two #portfolio_list .card a .image {
+      height: 154px; }
+    #page_two #portfolio_list .card a .abstract {
+      height: 154px; }
+    #page_two #portfolio_list .card .data .post_title {
+      margin-left: 2%; }
+    #page_two #portfolio_list .card .data .post_abstract {
+      margin-left: 2%; }
+    #page_two #portfolio_list .card .data .post_overview {
+      display: inline-block;
+      width: 98%;
+      margin-top: 30px;
+      margin-left: 1%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background: #eee;
+      vertical-align: top; }
+    #page_two #portfolio_list .card .data .post {
+      width: 100%; }
+
+  #page_three {
+    height: 61px; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #introduction {
+    color: white; }
+    #introduction #brief {
+      margin-top: 1%;
+      font-size: 1.2em; }
+
+  #page_two #portfolio_list .card {
+    width: 30%; }
+    #page_two #portfolio_list .card a .image {
+      height: 140px; }
+    #page_two #portfolio_list .card a .abstract {
+      height: 140px; }
+    #page_two #portfolio_list .card .data .post_title {
+      margin-left: 4%; }
+    #page_two #portfolio_list .card .data .post_abstract {
+      margin-left: 4%; }
+    #page_two #portfolio_list .card .data .post_overview {
+      display: inline-block;
+      width: 92%;
+      margin-top: 30px;
+      margin-left: 4%;
+      padding: 10px;
+      background: #eee;
+      border: 1ps solid #ddd;
+      vertical-align: top;
+      font-size: 0.9em; }
+    #page_two #portfolio_list .card .data .post {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px; }
+
+  #page_three {
+    height: 61px; } }

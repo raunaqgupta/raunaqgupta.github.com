@@ -1,0 +1,92 @@
+{% include page_header.html %}
+
+<div class="container">
+	<div id="page_one">
+		<ul id="nav_list">
+			<a href="#page_two"><li>Portfolio</li></a>
+			<a href="/res/raunaq_gupta_resume.pdf"><li>Resumé</li></a>
+			<a href="#page_four"><li>About</li></a>
+			<a href="mailto:raunaq.rg@gmail.com"><li>Email</li></a>
+		</ul>
+		<div id="introduction">
+			<h1>Hi, I am Raunaq.</h1>
+			<p id="brief">I design and build digital products through a human-centered approach.</p>
+		</div>
+	</div>
+
+	<div id="page_two">
+		<h2 id="portfolio_title">Portfolio</h2>
+		<ul id="portfolio_list">
+			{% for post in site.categories.featured limit:6 %}
+			<li class="card">
+				<a class="card_link" href="#">
+          <span class="image" style="background: url(./img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 100%; background-repeat: no-repeat;">
+          </span>
+          <p class="title">{{post.title}}</p>
+          <p class="abstract">{{post.abstract}}</p>
+        </a>
+        <span class="data">
+          <ul class="post-control">
+            <li class="date">{{ post.date || date_to_long_string }}
+            </li><li class="tags">Category <strong>{{ post.tags }}</strong>
+            </li><li class="close_modal"><i class="icon-remove icon-white"></i>
+            </li>
+          </ul>
+          <h1 class="post_title">{{post.title}}</h1>
+          <h4 class="post_abstract">{{post.abstract}}</h4>
+          <div class="post_overview">
+          	<h4>Overview</h4>
+          	{{post.overview}}
+          	<h4>Role and Contributions</h4>
+          	{{post.contributions}}
+          	<h4>Team</h4>
+          	{{post.team}}
+          	<h4>Duration</h4>
+          	{{post.duration}}
+          </div>
+          <div class="post">{{post.content}}</div>
+
+          <span class="close_flyout">
+            <button type="button" class="btn btn-success close_modal">Close</button>
+          </span>
+        </span>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+	<div id="page_three">
+		<ul id="worked_with">
+			<li>Worked at</li>
+			<li><img src="/img/common/logos/ibm_logo.png" style="height: 30px"></img></li>
+			<li><img src="/img/common/logos/aricent_logo.png" style="height: 34px"></img></li>
+			<li>Studied at</li>
+			<li><img src="/img/common/logos/cmu_logo.png"></img></li>
+			<li>
+				<div class="custom_button">Resumé</div>
+			</li>
+		</ul>
+	</div>
+
+	<div id="page_four">
+		<ul>
+			<li id="photo_self"><img src="http://www.gravatar.com/avatar/e8c7e7ab7f8ad92754b38823a8e886f8.png?s=128"></img></li>
+			<li id="about_self">
+				<p>I am an experience designer/developer with a background in human-computer interaction and computer science. I love designing, researching and building digital products that improve human connections and empower people and their communities.</p>
+				<p style="color: white; font-size: 1.1em">Interested in working together? Feel free to reach me at <a href="mailto:raunaq.rg@gmail.com" style="color:white; background: orange">raunaq.rg@gmail.com</a>.</p>
+				<ul id="social">
+					<li><a href="http://www.twitter.com/raunaqgupta" target="_blank"><img src="/img/common/twitter.png"></img></a></li>
+		      <li><a href="http://www.linkedin.com/in/raunaqgupta" target="_blank"><img src="/img/common/linkedin.png"></img></a></li>
+		      <li><a href="http://www.facebook.com/raunaqgupta" target="_blank"><img src="/img/common/facebook.png"></img></a></li>
+		      <li><a href="http://www.github.com/raunaqgupta" target="_blank"><img src="/img/common/github.png"></img></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div id="page_five">
+		<p>Designed and built by Raunaq Gupta, ©2014</p>
+	</div>
+</div>
+
+{% include page_footer.html %}

@@ -11,6 +11,7 @@ $(document).ready(function(){
 	});
 
 	$(".card_link").on("click", function(e){
+		$(".data").removeClass("visible");
 		var post_data = $(this).parent(".card").children(".data");
 		post_data.toggleClass("visible");
 		post_data.find("img").each(function(i,e){

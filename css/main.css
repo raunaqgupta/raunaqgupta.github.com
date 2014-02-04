@@ -16,6 +16,7 @@ html {
   width: 100%; }
 
 .container {
+  background-color: orange;
   width: 767px; }
 
 body {

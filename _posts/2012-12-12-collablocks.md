@@ -1,14 +1,19 @@
 ---
 layout: portfolio_post
-category: portfolio
+categories: portfolio featured
 title: Collablocks
 tags: WebGL
 image_folder: img_collablocks
-abstract: Uniting anonymous crowds through collective collaboration
----
-<h2>Collablocks</h2>
+abstract: Uniting anonymous crowds through collective collaboration.
 
-Collablocks is a social experimental game which tries to put a co-located group of people together to solve a 3D based puzzle. The game itself is displayed on a public screen and individual gamers can join via their mobile devices.
+overview: A social experimental game played on connected devices amongst a group of co-located people via a large shared screen. Runner-up at CMU Facebook Hackathon 2012.
+
+contributions: I contributed to the design of the UI and WebGL based visualization for the large shared display. I also co-wrote code for the Node.JS and socketstream based back-end.
+
+team: Jonas Gebhardt, Jonathan Chan, Noah Bernstein
+
+duration: 24 hours
+---
 
 <p style="text-align: center">
 	<iframe src="//player.vimeo.com/video/61863214?byline=0&amp;portrait=0" width="500" height="281" frameborder="0">
@@ -32,11 +37,3 @@ It is a social experimental game that aims at providing a platform to engage lar
 <h4>Technology</h4>
 
 The app built atop Node.JS and socketstream and the visualizations were created with WebGL and Javascript.
-
-<h4>Role</h4>
-
-We built and tested Collablocks during Facebook CMU hackathon in 2012 and were runner-ups at the event. I was one of the programmers in the team of four using node.js, socketstream and webGL to create the experience.
-
-<h4>Team</h4>
-
-[Jonas Gebhardt](http://jonasgebhardt.net) + [Jonathan Chan](http://www.jon-chan.com/work) + [Noah Bernstein](http://noahbornstein.com/)
