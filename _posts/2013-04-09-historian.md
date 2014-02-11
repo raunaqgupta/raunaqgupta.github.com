@@ -44,27 +44,27 @@ Historian is a proof-of-concept re-design of how web browsers history page. The 
 
 The timeline provides an overview of the entire browsing history represented solely through website favicons for a quick glance of the users movement. The user can then drill down quickly via the list on its left. Other notable features include grouping together of acitvity on a single website or application which can be expanded; interaction adn visual data on hover and also providing the amount of time spent through a bargraph like visual in the background.
 
-<h4>Prototypes</h4>
-
-Two levels of prototype fidelity were used to define the various screens and application flow.
-
-<figure class="post-image-thumbnails">
-	<img lazysrc="/img/img_historian/wireframes/0.png" class="post-thumbnail img-polaroid">
-	<img lazysrc="/img/img_historian/wireframes/1.png" class="post-thumbnail img-polaroid">
-	<img lazysrc="/img/img_historian/wireframes/3.png" class="post-thumbnail img-polaroid">
-	<figcaption>Wireframes (Indigo)</figcaption>
+<figure class="post-image">
+	<img lazysrc="/img/img_historian/image1.jpg" class="overview-image">
+	<figcaption>Paper prototyping features</figcaption>
 </figure>
 
 <figure class="post-image">
-	<img lazysrc="/img/img_historian/hi-fid/1.png" class="enlarge_img">
-	<figcaption>Hi-fidelity Prototype</figcaption>
+	<img lazysrc="/img/img_historian/image2.jpg" class="overview-image">
+	<figcaption>Interactive prototypes in Indigo</figcaption>
+</figure>
+
+<figure class="post-image">
+	<img lazysrc="/img/img_historian/hi-fid/2.png" class="enlarge_img">
+	<figcaption>Expanding groups for details</figcaption>
 </figure>
 
 <figure class="post-image">
 	<img lazysrc="/img/img_historian/hi-fid/3.png" class="enlarge_img">
-	<figcaption>Hi-fidelity Prototype</figcaption>
+	<figcaption>Search keywords</figcaption>
 </figure>
 
-<p style="text-align:center">
-<iframe width="560" height="360" src="//www.youtube.com/embed/ZanAWwaJ3tY" frameborder="0"> </iframe>
-</p>
+<figure class="post-image">
+	<img lazysrc="/img/img_historian/hi-fid/4.png" class="enlarge_img">
+	<figcaption>Filtering via categories</figcaption>
+</figure>

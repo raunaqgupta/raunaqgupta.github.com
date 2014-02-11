@@ -237,22 +237,16 @@ h1, h2 {
 
 .post-image {
   text-align: center;
-  margin: 10px;
+  margin: 20px;
 
-  img {
-    max-width: 75%;
-    min-width: 500px;
-
-    &.enlarge_img:hover {
-      cursor: pointer;
-      cursor: -webkit-zoom-in;
-      cursor: -moz-zoom-in;
-    }
+  .overview-image {
+  	border: 1px solid #eee;
   }
 
   figcaption {
-    font-size: 12px;
+    font-size: 14px;
     font-style: italic;
+    margin-top: 10px;
   }
 }
 

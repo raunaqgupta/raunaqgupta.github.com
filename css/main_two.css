@@ -178,17 +178,13 @@ h1, h2 {
 /* images */
 .post-image {
   text-align: center;
-  margin: 10px; }
-  .post-image img {
-    max-width: 75%;
-    min-width: 500px; }
-    .post-image img.enlarge_img:hover {
-      cursor: pointer;
-      cursor: -webkit-zoom-in;
-      cursor: -moz-zoom-in; }
+  margin: 20px; }
+  .post-image .overview-image {
+    border: 1px solid #eee; }
   .post-image figcaption {
-    font-size: 12px;
-    font-style: italic; }
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px; }
 
 .post-image-thumbnails {
   text-align: center;
