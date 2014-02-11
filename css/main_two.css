@@ -2,7 +2,9 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0; }
 
 html, body {
   margin: 0;
@@ -40,7 +42,8 @@ h1, h2 {
         background-color: orange; }
   #page_one #introduction {
     position: relative;
-    top: 38%; }
+    top: 38%;
+    color: white; }
     #page_one #introduction #brief {
       margin-top: 1%;
       font-size: 1.2em; }
@@ -55,30 +58,30 @@ h1, h2 {
   border-top: 5px solid #999; }
   #page_two #portfolio_title {
     color: lightslategrey; }
-  #page_two #portfolio_list {
+  #page_two #portfolio_list, #page_two #portfolio_list_all {
     list-style: none;
     margin: 0;
     margin-top: 30px;
     padding: 0 10px; }
-    #page_two #portfolio_list .card {
+    #page_two #portfolio_list .card, #page_two #portfolio_list_all .card {
       position: relative;
       display: inline-block;
       width: 25%;
       margin: 1%;
       text-align: left; }
-      #page_two #portfolio_list .card a {
+      #page_two #portfolio_list .card a, #page_two #portfolio_list_all .card a {
         text-decoration: none; }
-        #page_two #portfolio_list .card a .image {
+        #page_two #portfolio_list .card a .image, #page_two #portfolio_list_all .card a .image {
           display: block;
           width: 100%;
           height: 200px;
           border: 1px solid #ddd; }
-        #page_two #portfolio_list .card a .title {
+        #page_two #portfolio_list .card a .title, #page_two #portfolio_list_all .card a .title {
           padding: 10px;
           font-size: 1.3em;
           color: #444;
           margin: 0; }
-        #page_two #portfolio_list .card a .abstract {
+        #page_two #portfolio_list .card a .abstract, #page_two #portfolio_list_all .card a .abstract {
           color: black;
           float: left;
           position: absolute;
@@ -89,7 +92,7 @@ h1, h2 {
           opacity: 0.95;
           padding: 10px;
           display: none; }
-      #page_two #portfolio_list .card .data {
+      #page_two #portfolio_list .card .data, #page_two #portfolio_list_all .card .data {
         display: none;
         position: relative;
         float: left;
@@ -100,73 +103,77 @@ h1, h2 {
         border: 1px solid #ddd;
         z-index: 20;
         margin-bottom: 10px; }
-        #page_two #portfolio_list .card .data .post-control {
+        #page_two #portfolio_list .card .data .post-control, #page_two #portfolio_list_all .card .data .post-control {
           list-style: none;
           margin-bottom: 10px;
           text-align: right; }
-          #page_two #portfolio_list .card .data .post-control li {
+          #page_two #portfolio_list .card .data .post-control li, #page_two #portfolio_list_all .card .data .post-control li {
             display: inline-block;
             height: 25px;
             line-height: 25px;
             text-align: center;
             padding-left: 0.5em;
             padding-right: 0.5em; }
-            #page_two #portfolio_list .card .data .post-control li.date {
+            #page_two #portfolio_list .card .data .post-control li.date, #page_two #portfolio_list_all .card .data .post-control li.date {
               height: 25px;
               background-color: #eee;
               color: #aaa; }
-            #page_two #portfolio_list .card .data .post-control li.tags {
+            #page_two #portfolio_list .card .data .post-control li.tags, #page_two #portfolio_list_all .card .data .post-control li.tags {
               background-color: #ddd;
               color: #aaa; }
-            #page_two #portfolio_list .card .data .post-control li.link {
+            #page_two #portfolio_list .card .data .post-control li.link, #page_two #portfolio_list_all .card .data .post-control li.link {
               background-color: #eee;
               color: #aaa; }
-            #page_two #portfolio_list .card .data .post-control li.close_modal {
+            #page_two #portfolio_list .card .data .post-control li.close_modal, #page_two #portfolio_list_all .card .data .post-control li.close_modal {
               background-color: #ae4242; }
-              #page_two #portfolio_list .card .data .post-control li.close_modal i {
+              #page_two #portfolio_list .card .data .post-control li.close_modal i, #page_two #portfolio_list_all .card .data .post-control li.close_modal i {
                 background-position: -311px 1px; }
-              #page_two #portfolio_list .card .data .post-control li.close_modal:hover {
+              #page_two #portfolio_list .card .data .post-control li.close_modal:hover, #page_two #portfolio_list_all .card .data .post-control li.close_modal:hover {
                 background-color: rgba(174, 66, 66, 0.5);
                 cursor: pointer; }
-        #page_two #portfolio_list .card .data .post_title {
+        #page_two #portfolio_list .card .data .post_title, #page_two #portfolio_list_all .card .data .post_title {
           margin-left: 4%; }
-        #page_two #portfolio_list .card .data .post_abstract {
+        #page_two #portfolio_list .card .data .post_abstract, #page_two #portfolio_list_all .card .data .post_abstract {
           margin-left: 4%; }
-        #page_two #portfolio_list .card .data .post_overview {
+        #page_two #portfolio_list .card .data .post_overview, #page_two #portfolio_list_all .card .data .post_overview {
           display: inline-block;
           width: 25%;
+          margin: 0;
           margin-top: 30px;
           padding: 10px;
           background: #eee;
           border-top: 1px solid #ddd;
           border-right: 1px solid #ddd;
           border-bottom: 1px solid #ddd;
-          vertical-align: top; }
-        #page_two #portfolio_list .card .data .post {
+          vertical-align: top;
+          list-style: none; }
+        #page_two #portfolio_list .card .data .post, #page_two #portfolio_list_all .card .data .post {
           display: inline-block;
           width: 74%;
           padding-top: 30px;
           padding-left: 60px;
           padding-right: 60px; }
-        #page_two #portfolio_list .card .data .close_flyout {
+        #page_two #portfolio_list .card .data .close_flyout, #page_two #portfolio_list_all .card .data .close_flyout {
           display: block;
           width: 100%;
           text-align: center; }
-      #page_two #portfolio_list .card:nth-child(3n+1) .data.visible {
+      #page_two #portfolio_list .card:nth-child(3n+1) .data.visible, #page_two #portfolio_list_all .card:nth-child(3n+1) .data.visible {
         display: block;
         left: 0; }
-      #page_two #portfolio_list .card:nth-child(3n+1) .data:before {
+      #page_two #portfolio_list .card:nth-child(3n+1) .data:before, #page_two #portfolio_list_all .card:nth-child(3n+1) .data:before {
         left: 0; }
-      #page_two #portfolio_list .card:nth-child(3n+2) .data.visible {
+      #page_two #portfolio_list .card:nth-child(3n+2) .data.visible, #page_two #portfolio_list_all .card:nth-child(3n+2) .data.visible {
         display: block;
         left: -109%; }
-      #page_two #portfolio_list .card:nth-child(3n+2) .data:before {
+      #page_two #portfolio_list .card:nth-child(3n+2) .data:before, #page_two #portfolio_list_all .card:nth-child(3n+2) .data:before {
         left: 0; }
-      #page_two #portfolio_list .card:nth-child(3n) .data.visible {
+      #page_two #portfolio_list .card:nth-child(3n) .data.visible, #page_two #portfolio_list_all .card:nth-child(3n) .data.visible {
         display: block;
         left: -218%; }
-      #page_two #portfolio_list .card:nth-child(3n) .data:before {
+      #page_two #portfolio_list .card:nth-child(3n) .data:before, #page_two #portfolio_list_all .card:nth-child(3n) .data:before {
         left: 0; }
+  #page_two #portfolio_list_all {
+    display: none; }
 
 /* images */
 .post-image {
@@ -213,7 +220,6 @@ h1, h2 {
 
 #page_three {
   width: 100%;
-  height: 70px;
   background-color: #ccc;
   padding: 1% 0;
   font-size: 1.5em;
@@ -270,10 +276,51 @@ h1, h2 {
   color: white; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  #page_two #portfolio_list li {
+  #page_two #portfolio_list .card {
     width: 95%;
-    background-color: blue;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+    #page_two #portfolio_list .card .data {
+      width: 100%; }
+      #page_two #portfolio_list .card .data .post_overview {
+        width: 100%;
+        border-right: 0px; }
+      #page_two #portfolio_list .card .data .post {
+        width: 100%;
+        padding: 0 4%; }
+    #page_two #portfolio_list .card:nth-child(3n+1) .data.visible {
+      display: block;
+      left: 0; }
+    #page_two #portfolio_list .card:nth-child(3n+1) .data:before {
+      left: 0; }
+    #page_two #portfolio_list .card:nth-child(3n+2) .data.visible {
+      display: block;
+      left: 0; }
+    #page_two #portfolio_list .card:nth-child(3n+2) .data:before {
+      left: 0; }
+    #page_two #portfolio_list .card:nth-child(3n) .data.visible {
+      display: block;
+      left: 0; }
+    #page_two #portfolio_list .card:nth-child(3n) .data:before {
+      left: 0; }
+
+  #page_three {
+    height: none; }
+    #page_three #worked_with li {
+      width: 100%;
+      margin: 4% 0; }
+      #page_three #worked_with li .custom_button {
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 auto;
+        padding: 0; }
+
+  #page_four ul #about_self {
+    width: 100%;
+    margin: 0;
+    margin-top: 10%; }
+    #page_four ul #about_self #social {
+      text-align: center; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   #introduction {
     color: white; }
@@ -329,9 +376,13 @@ h1, h2 {
       margin-left: 4%;
       padding: 10px;
       background: #eee;
-      border: 1ps solid #ddd;
+      border: 1px solid #ddd;
       vertical-align: top;
-      font-size: 0.9em; }
+      font-size: 0.9em;
+      list-style: none; }
+      #page_two #portfolio_list .card .data .post_overview li {
+        display: inline-block;
+        width: 25%; }
     #page_two #portfolio_list .card .data .post {
       width: 100%;
       padding-left: 30px;

@@ -34,16 +34,24 @@
           </ul>
           <h1 class="post_title">{{post.title}}</h1>
           <h4 class="post_abstract">{{post.abstract}}</h4>
-          <div class="post_overview">
-          	<h4>Overview</h4>
-          	{{post.overview}}
-          	<h4>Role and Contributions</h4>
-          	{{post.contributions}}
-          	<h4>Team</h4>
-          	{{post.team}}
-          	<h4>Duration</h4>
-          	{{post.duration}}
-          </div>
+          <ul class="post_overview">
+          	<li>
+          		<h4>Overview</h4>
+          		{{post.overview}}
+          	</li>
+          	<li>
+	          	<h4>Role and Contributions</h4>
+	          	{{post.contributions}}
+          	</li>
+          	<li>
+	          	<h4>Team</h4>
+	          	{{post.team}}
+	          </li>
+	          <li>
+	          	<h4>Duration</h4>
+	          	{{post.duration}}
+	          </li>
+          </ul>
           <div class="post">{{post.content}}</div>
 
           <span class="close_flyout">

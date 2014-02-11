@@ -1,6 +1,6 @@
 ---
 layout: portfolio_post
-categories: portfolio featured
+categories: featured
 title: Collablocks
 tags: WebGL
 image_folder: img_collablocks

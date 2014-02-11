@@ -5,6 +5,8 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
@@ -54,6 +56,7 @@ h1, h2 {
 	#introduction {
 		position: relative;
 		top: 38%;
+		color: white;
 
 		#brief {
 			margin-top: 1%;
@@ -75,7 +78,7 @@ h1, h2 {
 		color: lightslategrey;
 	}
 
-	#portfolio_list {
+	#portfolio_list, #portfolio_list_all {
 		list-style: none;
 		margin: 0;
 		margin-top: 30px;
@@ -185,6 +188,7 @@ h1, h2 {
 				.post_overview {
 					display: inline-block;
 					width: 25%;
+					margin: 0;
 					margin-top: 30px;
 					padding: 10px;
 					background: #eee;
@@ -192,6 +196,7 @@ h1, h2 {
 					border-right: 1px solid #ddd;
 					border-bottom: 1px solid #ddd;
 					vertical-align: top;
+					list-style: none;
 				}
 
 	      .post {
@@ -221,6 +226,10 @@ h1, h2 {
 	      @include data_child(-218%, 0);
 	    }
 		}
+	}
+
+	#portfolio_list_all {
+		display: none;
 	}
 }
 
@@ -288,7 +297,6 @@ h1, h2 {
 
 #page_three {
 	width: 100%;
-	height: 70px;
 	background-color: #ccc;
 	padding: 1% 0;
 	font-size: 1.5em;
@@ -368,15 +376,71 @@ h1, h2 {
 
 
 // phones
-// device-width will not work without user-agent
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
 	#page_two {
 		#portfolio_list {
-			li {
+			.card {
 				width: 95%;
-				background-color: blue;
 				margin-bottom: 10px;
+
+				.data {
+					width: 100%;
+
+					.post_overview {
+						width: 100%;
+						border-right: 0px;
+					}
+
+					.post {
+						width: 100%;
+						padding: 0 4%;
+					}
+				}
+
+				&:nth-child(3n+1){
+		      @include data_child(0, 0);
+		    }
+
+		    &:nth-child(3n+2){
+		      @include data_child(0, 0);
+		    }
+
+		    &:nth-child(3n){
+		      @include data_child(0, 0);
+		    }
+			}
+		}
+	}
+
+	#page_three {
+		height: none;
+		#worked_with {
+			li {
+				width: 100%;
+				margin: 4% 0;
+
+				.custom_button {
+					width: 100px;
+					height: 50px;
+					line-height: 50px;
+					margin: 0 auto;
+					padding: 0;
+				}
+			}
+		}
+	}
+
+	#page_four {
+		ul {
+			#about_self {
+				width: 100%;
+				margin: 0;
+				margin-top: 10%;
+
+				#social {
+					text-align: center;
+				}
 			}
 		}
 	}
@@ -477,9 +541,15 @@ h1, h2 {
 						margin-left: 4%;
 						padding: 10px;
 						background: #eee;
-						border: 1ps solid #ddd;
+						border: 1px solid #ddd;
 						vertical-align: top;
 						font-size: 0.9em;
+						list-style: none;
+
+						li {
+							display: inline-block;
+							width: 25%;
+						}
 					}
 
 					.post {
