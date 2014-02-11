@@ -20,7 +20,7 @@
 			{% for post in site.categories.featured limit:6 %}
 			<li class="card">
 				<a class="card_link" href="#">
-          <span class="image" style="background: url(./img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: 100%; background-repeat: no-repeat;">
+          <span class="image" style="background: url(./img/{{post.image_folder}}/thumbnail.jpg) center center; background-size: cover; background-repeat: no-repeat;">
           </span>
           <p class="title">{{post.title}}</p>
           <p class="abstract">{{post.abstract}}</p>

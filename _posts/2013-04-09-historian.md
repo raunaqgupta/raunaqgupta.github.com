@@ -46,7 +46,7 @@ The timeline provides an overview of the entire browsing history represented sol
 
 <figure class="post-image">
 	<img lazysrc="/img/img_historian/image1.jpg" class="overview-image">
-	<figcaption>Paper prototyping features</figcaption>
+	<figcaption>Sketching out features</figcaption>
 </figure>
 
 <figure class="post-image">

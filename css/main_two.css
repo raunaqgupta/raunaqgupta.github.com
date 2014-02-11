@@ -271,7 +271,7 @@ h1, h2 {
   font-size: 0.8em;
   color: white; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   #page_two #portfolio_list .card {
     width: 95%;
     margin-bottom: 10px; }
@@ -317,7 +317,7 @@ h1, h2 {
     margin-top: 10%; }
     #page_four ul #about_self #social {
       text-align: center; } }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   #introduction {
     color: white; }
     #introduction #brief {
@@ -348,7 +348,7 @@ h1, h2 {
 
   #page_three {
     height: 61px; } }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   #introduction {
     color: white; }
     #introduction #brief {
