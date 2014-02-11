@@ -4,7 +4,7 @@ categories: featured
 title: Collablocks
 tags: WebGL
 image_folder: img_collablocks
-abstract: Uniting anonymous crowds through collective collaboration.
+abstract: Uniting anonymous crowds through collaboration.
 
 overview: A social experimental game played on connected devices amongst a group of co-located people via a large shared screen. Runner-up at CMU Facebook Hackathon 2012.
 
