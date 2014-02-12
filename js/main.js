@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+	setTimeout(function(){
+		$("#brief").text("So Design. Much Code. Wow.");
+	}, 5000);
+
 	$(".post-thumbnail, .enlarge_img").attr("onclick", '').click(function(){
 		var image_src = $(this).attr("src");
 		$("#lightbox").children("img").attr("src", image_src);
