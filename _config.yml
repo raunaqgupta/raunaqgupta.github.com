@@ -1,5 +1,5 @@
 name: Raunaq Gupta
-markdown: maruku
+markdown: kramdown
 pygments: true
 port: 5000
 permalink: none
