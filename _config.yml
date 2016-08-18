@@ -1,5 +1,5 @@
 name: Raunaq Gupta
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 port: 5000
 permalink: none
