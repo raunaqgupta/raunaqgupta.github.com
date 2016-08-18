@@ -4,7 +4,7 @@
     <div class="span7">
       <span class="data">
         <ul class="post-control">
-          <li class="date">{{ page.date || date_to_long_string }}
+          <li class="date">{{ page.date | date_to_long_string }}
           </li><li class="tags">Category <strong>{{ page.tags }}</strong>
           </li><li class="link"><a href="{{page.url}}" target="_blank">Link</a>
           </li>
