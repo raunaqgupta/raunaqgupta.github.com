@@ -1,4 +1,8 @@
 name: Raunaq Gupta
+highlighter: pygments
 markdown: kramdown
 port: 5000
 permalink: none
+sass:
+ sass_dir: _sass
+ style: :compressed
