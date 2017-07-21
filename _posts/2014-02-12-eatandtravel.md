@@ -1,16 +1,17 @@
 ---
-layout: portfolio_post
-categories: portfolio
 title: Eat & Travel
-tags: Research
+date: 2014-02-12 00:00:00 Z
+categories:
+- portfolio
+tags:
+- Research
+layout: portfolio_post
 image_folder: img_swrmio
 abstract: Defining an immersive dining experience
-overview: Eat & Travel is a Lisbon based startup that wanted to design an immersive dining experience.
-
+overview: Eat & Travel is a Lisbon based startup that wanted to design an immersive
+  dining experience.
 contributions: User research, Observations, Web Development
-
 team: Sheila Christian, Ashley Wilson, Luis Ferreoira
-
 duration: 8 months
 ---
 

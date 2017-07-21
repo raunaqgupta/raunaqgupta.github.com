@@ -1,8 +1,18 @@
+---
+title: Raunaqgupta.Github.Com
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 name: Raunaq Gupta
 highlighter: rouge
 markdown: kramdown
 port: 5000
 permalink: none
 sass:
- sass_dir: _sass
- style: :compressed
+  sass_dir: _sass
+  style: :compressed

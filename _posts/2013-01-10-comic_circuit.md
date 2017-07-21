@@ -1,17 +1,20 @@
 ---
-layout: portfolio_post
-categories: featured
-tags: Web
 title: Comic Circuit
+date: 2013-01-10 00:00:00 Z
+categories:
+- featured
+tags:
+- Web
+layout: portfolio_post
 image_folder: img_comic_circuit
-abstract: A web service to foster crowdsourced comic creation. CHI 2013 design competition finalist.
-
-overview: Comic Circuit is an online community and a user interface toolkit to crowdsource news articles into comic strips.
-
-contributions: I took the role of the UX designer and prototyper which saw me working on paper prototypes, creating mid-fidelity mockups in Balsamiq and Photoshop and contributing to the final prototype developed in HTML5/Javascript.
-
+abstract: A web service to foster crowdsourced comic creation. CHI 2013 design competition
+  finalist.
+overview: Comic Circuit is an online community and a user interface toolkit to crowdsource
+  news articles into comic strips.
+contributions: I took the role of the UX designer and prototyper which saw me working
+  on paper prototypes, creating mid-fidelity mockups in Balsamiq and Photoshop and
+  contributing to the final prototype developed in HTML5/Javascript.
 team: Ben Margines, Nancy Chen, Rebecca Jablonsky, Shailie Thakkar
-
 duration: 6 months
 ---
 

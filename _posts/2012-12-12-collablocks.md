@@ -1,17 +1,20 @@
 ---
-layout: portfolio_post
-categories: featured
 title: Collablocks
-tags: WebGL
+date: 2012-12-12 00:00:00 Z
+categories:
+- featured
+tags:
+- WebGL
+layout: portfolio_post
 image_folder: img_collablocks
 abstract: Uniting anonymous crowds through collaboration.
-
-overview: A social experimental game played on connected devices amongst a group of co-located people via a large shared screen. Runner-up at CMU Facebook Hackathon 2012.
-
-contributions: I contributed to the design of the UI and WebGL based visualization for the large shared display. I also co-wrote code for the Node.JS and socketstream based back-end.
-
+overview: A social experimental game played on connected devices amongst a group of
+  co-located people via a large shared screen. Runner-up at CMU Facebook Hackathon
+  2012.
+contributions: I contributed to the design of the UI and WebGL based visualization
+  for the large shared display. I also co-wrote code for the Node.JS and socketstream
+  based back-end.
 team: Jonas Gebhardt, Jonathan Chan, Noah Bernstein
-
 duration: 24 hours
 ---
 

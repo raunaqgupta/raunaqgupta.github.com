@@ -1,11 +1,15 @@
 ---
-layout: portfolio_post
-category: portfolio
-tags: Graphic
 title: Crunchbang Linux
+date: 2011-10-15 00:00:00 Z
+categories:
+- portfolio
+tags:
+- Graphic
+layout: portfolio_post
 image_folder: img_crunchbang_sticker
 abstract: Early graphic design work
 ---
+
 <h2>Crunchbang Linux Stickers</h2>
 
 <figure class="post-image">

@@ -1,11 +1,15 @@
 ---
-layout: portfolio_post
-category: portfolio
-tags: Hardware
 title: The Ball Of Secrets
+date: 2013-10-30 00:00:00 Z
+categories:
+- portfolio
+tags:
+- Hardware
+layout: portfolio_post
 image_folder: img_ball_of_secrets
 abstract: Combine. Find. Keep. Share.
 ---
+
 <h2>Ball Of Secrets</h2>
 
 <figure class="post-image">

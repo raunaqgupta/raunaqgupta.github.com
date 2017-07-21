@@ -1,9 +1,12 @@
 ---
-layout: generic_post
-categories: private
 title: Assets
+date: 2013-11-27 00:00:00 Z
+categories:
+- private
+layout: generic_post
 image_folder: img_project_assets
 ---
+
 <h3>Project: <a href="http://swrm.io">Swrm.io</a></h3>
 <figure class="post-image-thumbnails">
 	<img src="/img/img_project_assets/swrmio_wireframes_Page_1.jpg" class="post-thumbnail img-polaroid">

@@ -1,17 +1,19 @@
 ---
-layout: portfolio_post
-categories: featured
-tags: Web
 title: Historian
+date: 2013-04-09 00:00:00 Z
+categories:
+- featured
+tags:
+- Web
+layout: portfolio_post
 image_folder: img_historian
 abstract: Redesigning web browser history for faster recall.
-
-overview: Historian is a proof of concept design to improve how browser history is visualized and utilized for faster recall.
-
-contributions: Responsible for competitive analysis and literature review, wireframing, application navigation and video editing. Also contributed to hi-fidelity assets in Photoshop.
-
+overview: Historian is a proof of concept design to improve how browser history is
+  visualized and utilized for faster recall.
+contributions: Responsible for competitive analysis and literature review, wireframing,
+  application navigation and video editing. Also contributed to hi-fidelity assets
+  in Photoshop.
 team: Kristine Mendoza, Namrata Kannan, Raymond Liaw
-
 duration: 2 Weeks
 ---
 
